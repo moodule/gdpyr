@@ -17,7 +17,6 @@ BOT_NAME = 'gdpyr'
 SPIDER_MODULES = ['gdpyr.spiders']
 NEWSPIDER_MODULE = 'gdpyr.spiders'
 
-
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 __useragents_file_path = os.path.join(
 		os.path.dirname(os.path.realpath(__file__)),
@@ -56,7 +55,7 @@ COOKIES_ENABLED = False
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
    'gdpyr.middlewares.RandomUserAgentMiddleware': 100,
-   'gdpyr.middlewares.GDPyRSpiderMiddleware': 543,
+   'gdpyr.middlewares.GdpyrSpiderMiddleware': 543,
 }
 
 # The maximum depth that will be allowed to crawl for any site.
@@ -70,7 +69,7 @@ DEPTH_PRIORITY = 1
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'gdpyr.middlewares.GDPyRDownloaderMiddleware': 543,
+#    'gdpyr.middlewares.GdpyrDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -87,10 +86,6 @@ MONGO_DATABASE = 'gdpyr'
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'gdpyr.pipelines.CsvPipeline': 300,
-   'gdpyr.pipelines.HtmlTablePipeline': 301,
-   'gdpyr.pipelines.JsonPipeline': 302,
-   'gdpyr.pipelines.MongoDbPipeline': 303,
    'gdpyr.pipelines.RawPipeline': 304,
 }
 

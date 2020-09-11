@@ -15,7 +15,7 @@ from scrapy.http import Request
 # MIDDLEWARES
 #####################################################################
 
-class GDPyRSpiderMiddleware(object):
+class GdpyrSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -99,7 +99,7 @@ class RandomUserAgentMiddleware(object):
 # DOWNLOADERS
 #####################################################################
 
-class GDPyRDownloaderMiddleware(object):
+class GdpyrDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
