@@ -13,7 +13,6 @@ from __future__ import absolute_import, division, print_function
 from bs4 import BeautifulSoup
 from datetime import datetime
 from nltk.metrics.distance import edit_distance
-import numpy as np
 import re
 import unicodedata
 
@@ -72,30 +71,6 @@ def format_text(
     """
     return remove_extra_spacing(remove_accents(text.lower()))
 
-def format_number(
-        text: str):
-    """
-    Convert strings to numpy float.
-
-    Parameters
-    ----------
-    text: str.
-        Any chunk of text.
-
-    Returns
-    -------
-    out: np.float64.
-        The formated text.
-    """
-    __as_text = format_text(text)
-    __is_a_number = re.search(
-        '([-+]?[0-9]+\.?[0-9]*).*',
-        format_text(text))
-    if __is_a_number:
-        return np.float64(__is_a_number.group(1))
-    else:
-        return np.float64(np.nan)
-
 #####################################################################
 # TRANSLATION
 #####################################################################
@@ -148,7 +123,7 @@ def find_closest_reference(
             s1=target,
             s2=__s)
         for __s in candidates]
-    return candidates[np.argmin(__distances)]
+    return candidates[__distances.index(min(__distances))]
 
 #####################################################################
 # TEXT
