@@ -10,13 +10,12 @@ Console script.
 
 from __future__ import absolute_import, division, print_function
 
-import click
+import argparse    
 
 #####################################################################
 # CLI
 #####################################################################
 
-@click.command()
 def main(args=None):
     """
     An alternative to the scrapy shell / scrapy crawl.
@@ -30,9 +29,10 @@ def main(args=None):
     -------
     out: None.
     """
-    click.echo("Replace this message by putting your code into "
-               "gdpyr.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+    parser = argparse.ArgumentParser(description='GDPyR monitors legal commitments of data-processors.')
+    parser.add_argument('-u', '--url', help='Url to a legal document.', required=False)
+
+    args = parser.parse_args()
 
 if __name__ == "__main__":
     main()
