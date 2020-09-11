@@ -1,23 +1,23 @@
 <html>
  <body class="d-lg-flex">
-  <!-- product > guide > topic > article -->
+  <!-- product > category > maptopic > article -->
   <div class="sidebar d-none d-lg-block">
    <div class="d-flex flex-items-center p-4" id="github-logo" style="z-index: 3;">
-    <a class="text-white" href="/en">
+    <a aria-hidden="true" class="text-white" href="/en">
      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewbox="0 0 16 16" width="32">
-      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd">
       </path>
      </svg>
     </a>
     <a class="h4-mktg text-white no-underline no-wrap pl-2 flex-auto" href="/en">
-     GitHub Help
+     GitHub Docs
     </a>
    </div>
    <ul class="sidebar-products">
     <!--
   Styling note:
 
-  Guides, Topics, and Articles list items get a class of `active` when they correspond to content
+  Categories, Maptopics, and Articles list items get a class of `active` when they correspond to content
   hierarchy of the current page. If an item's URL is also the same as the current URL, the item
   also gets an `is-current-page` class.
  -->
@@ -35,13 +35,13 @@
       GitHub.com
      </a>
     </li>
-    <ul class="sidebar-guides list-style-none">
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset" open="">
+    <ul class="sidebar-categories list-style-none">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset" open="">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/getting-started-with-github">
-          Getting started with GitHub
+          Getting started
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -49,9 +49,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/getting-started-with-github/quickstart">
           Quickstart
          </a>
@@ -78,7 +78,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/getting-started-with-github/learning-about-github">
           Learning about GitHub
          </a>
@@ -89,8 +89,18 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/getting-started-with-github/exploring-early-access-releases-with-feature-preview">
+            Exploring early access releases with feature preview
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/getting-started-with-github/types-of-github-accounts">
             Types of GitHub accounts
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/getting-started-with-github/faq-about-changes-to-githubs-plans">
+            FAQ about changes to GitHub’s plans
            </a>
           </li>
           <li class="sidebar-article">
@@ -130,7 +140,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/getting-started-with-github/signing-up-for-github">
           Signing up for GitHub
          </a>
@@ -157,7 +167,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/getting-started-with-github/exploring-projects-on-github">
           Exploring projects on GitHub
          </a>
@@ -179,7 +189,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/getting-started-with-github/using-github">
           Using GitHub
          </a>
@@ -202,15 +212,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset" open="">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset" open="">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/setting-up-and-managing-your-github-user-account">
-          Setting up and managing your GitHub user account
+          User accounts
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -218,9 +228,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-github-user-account/managing-user-account-settings">
           Managing user account settings
          </a>
@@ -261,6 +271,16 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-github-user-account/managing-the-default-branch-name-for-your-repositories">
+            Managing the default branch name for your repositories
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-github-user-account/managing-security-and-analysis-settings-for-your-user-account">
+            Managing security and analysis settings for your user account
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-user-accounts-project-boards">
             Managing access to your user account's project boards
            </a>
@@ -277,7 +297,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences">
           Managing email preferences
          </a>
@@ -324,7 +344,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories">
           Managing access to your personal repositories
          </a>
@@ -340,13 +360,18 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-your-github-user-account/removing-yourself-from-a-collaborators-repository">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-github-user-account/removing-yourself-from-a-collaborators-repository">
             Removing yourself from a collaborator's repository
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-your-github-user-account/maintaining-ownership-continuity-of-your-user-accounts-repositories">
+            Maintaining ownership continuity of your user account's repositories
            </a>
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-github-user-account/managing-your-membership-in-organizations">
           Managing your membership in organizations
          </a>
@@ -377,6 +402,11 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-github-user-account/managing-your-scheduled-reminders">
+            Managing your scheduled reminders
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-your-github-user-account/removing-yourself-from-an-organization">
             Removing yourself from an organization
            </a>
@@ -384,15 +414,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset" open="">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset" open="">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/setting-up-and-managing-your-github-profile">
-          Setting up and managing your GitHub profile
+          Profiles
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -400,9 +430,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-github-profile/customizing-your-profile">
           Customizing your profile
          </a>
@@ -423,13 +453,18 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme">
+            Managing your profile README
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile">
             Pinning items to your profile
            </a>
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-github-profile/managing-contribution-graphs-on-your-profile">
           Managing contribution graphs on your profile
          </a>
@@ -467,15 +502,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/authenticating-to-github">
-          Authenticating to GitHub
+          Authentication
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -483,13 +518,18 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/keeping-your-account-and-data-secure">
           Keeping your account and data secure
          </a>
          <ul class="sidebar-articles my-2">
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/authenticating-to-github/about-authentication-to-github">
+            About authentication to GitHub
+           </a>
+          </li>
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/authenticating-to-github/creating-a-strong-password">
             Creating a strong password
@@ -501,8 +541,8 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line">
-            Creating a personal access token for the command line
+           <a class="pl-6 pr-5 py-1" href="/en/github/authenticating-to-github/creating-a-personal-access-token">
+            Creating a personal access token
            </a>
           </li>
           <li class="sidebar-article">
@@ -572,7 +612,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa">
           Securing your account with two-factor authentication (2FA)
          </a>
@@ -619,7 +659,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/authenticating-with-saml-single-sign-on">
           Authenticating with SAML single sign-on
          </a>
@@ -646,7 +686,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/connecting-to-github-with-ssh">
           Connecting to GitHub with SSH
          </a>
@@ -683,7 +723,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/troubleshooting-ssh">
           Troubleshooting SSH
          </a>
@@ -750,7 +790,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/managing-commit-signature-verification">
           Managing commit signature verification
          </a>
@@ -797,7 +837,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/authenticating-to-github/troubleshooting-commit-signature-verification">
           Troubleshooting commit signature verification
          </a>
@@ -820,11 +860,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/managing-subscriptions-and-notifications-on-github">
@@ -836,16 +876,16 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-subscriptions-and-notifications-on-github/setting-up-notifications">
           Setting up notifications
          </a>
          <ul class="sidebar-articles my-2">
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/managing-subscriptions-and-notifications-on-github/about-notifications-beta">
-            About notifications beta
+           <a class="pl-6 pr-5 py-1" href="/en/github/managing-subscriptions-and-notifications-on-github/about-notifications">
+            About notifications
            </a>
           </li>
           <li class="sidebar-article">
@@ -855,7 +895,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-subscriptions-and-notifications-on-github/viewing-and-triaging-notifications">
           Viewing and triaging notifications
          </a>
@@ -877,7 +917,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github">
           Managing subscriptions for activity on GitHub
          </a>
@@ -895,118 +935,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
-       <summary>
-        <div class="d-flex flex-justify-between">
-         <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/receiving-notifications-about-activity-on-github">
-          Receiving notifications about activity on GitHub
-         </a>
-         <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-          <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
-          </path>
-         </svg>
-        </div>
-       </summary>
-       <!-- some guides have topics with child articles -->
-       <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
-         <a class="pl-4 pr-5 py-2" href="/en/github/receiving-notifications-about-activity-on-github/getting-started-with-notifications">
-          Getting started with notifications
-         </a>
-         <ul class="sidebar-articles my-2">
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/about-notifications">
-            About notifications
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/about-web-notifications">
-            About web notifications
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/about-email-notifications">
-            About email notifications
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/accessing-your-notifications">
-            Accessing your notifications
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/receiving-notifications-about-activity-on-github/choosing-the-delivery-method-for-your-notifications">
-            Choosing the delivery method for your notifications
-           </a>
-          </li>
-         </ul>
-        </li>
-        <li class="sidebar-topic">
-         <a class="pl-4 pr-5 py-2" href="/en/github/receiving-notifications-about-activity-on-github/managing-your-notifications">
-          Managing your notifications
-         </a>
-         <ul class="sidebar-articles my-2">
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/marking-notifications-as-read">
-            Marking notifications as read
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/saving-notifications-for-later">
-            Saving notifications for later
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/subscribing-to-and-unsubscribing-from-notifications">
-            Subscribing to and unsubscribing from notifications
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/listing-the-issues-and-pull-requests-youre-subscribed-to">
-            Listing the issues and pull requests you're subscribed to
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-repositories">
-            Watching and unwatching repositories
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-releases-for-a-repository">
-            Watching and unwatching releases for a repository
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/watching-and-unwatching-team-discussions">
-            Watching and unwatching team discussions
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/receiving-notifications-about-activity-on-github/listing-the-repositories-youre-watching">
-            Listing the repositories you're watching
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/receiving-notifications-about-activity-on-github/about-email-notifications-for-pushes-to-your-repository">
-            About email notifications for pushes to your repository
-           </a>
-          </li>
-         </ul>
-        </li>
-       </ul>
-       <!-- some guides have no topics, only articles -->
-      </details>
-     </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/setting-up-and-managing-organizations-and-teams">
-          Setting up and managing organizations and teams
+          Organizations and teams
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -1014,9 +951,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/collaborating-with-groups-in-organizations">
           Collaborating with groups in organizations
          </a>
@@ -1053,7 +990,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-membership-in-your-organization">
           Managing membership in your organization
          </a>
@@ -1085,7 +1022,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-peoples-access-to-your-organization-with-roles">
           Managing people's access to your organization with roles
          </a>
@@ -1096,8 +1033,8 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/changing-a-persons-role-to-owner">
-            Changing a person's role to owner
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/maintaining-ownership-continuity-for-your-organization">
+            Maintaining ownership continuity for your organization
            </a>
           </li>
           <li class="sidebar-article">
@@ -1117,7 +1054,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/organizing-members-into-teams">
           Organizing members into teams
          </a>
@@ -1148,11 +1085,6 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/synchronizing-teams-between-your-identity-provider-and-github">
-            Synchronizing teams between your identity provider and GitHub
-           </a>
-          </li>
-          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/renaming-a-team">
             Renaming a team
            </a>
@@ -1160,6 +1092,11 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/changing-team-visibility">
             Changing team visibility
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/synchronizing-a-team-with-an-identity-provider-group">
+            Synchronizing a team with an identity provider group
            </a>
           </li>
           <li class="sidebar-article">
@@ -1188,13 +1125,18 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-scheduled-reminders-for-your-team">
+            Managing scheduled reminders for your team
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-organizations-and-teams/deleting-a-team">
             Deleting a team
            </a>
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-repositories">
           Managing access to your organization's repositories
          </a>
@@ -1230,6 +1172,11 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/canceling-an-invitation-to-become-an-outside-collaborator-in-your-organization">
+            Canceling an invitation to become an outside collaborator in your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/removing-an-outside-collaborator-from-an-organization-repository">
             Removing an outside collaborator from an organization repository
            </a>
@@ -1251,7 +1198,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-project-boards">
           Managing access to your organization’s project boards
          </a>
@@ -1288,7 +1235,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-access-to-your-organizations-apps">
           Managing access to your organization's apps
          </a>
@@ -1305,7 +1252,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-organization-settings">
           Managing organization settings
          </a>
@@ -1346,6 +1293,11 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/disabling-or-limiting-github-actions-for-your-organization">
+            Disabling or limiting GitHub Actions for your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/setting-permissions-for-adding-outside-collaborators">
             Setting permissions for adding outside collaborators
            </a>
@@ -1361,8 +1313,13 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-scheduled-reminders-for-pull-requests">
-            Managing scheduled reminders for pull requests
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-scheduled-reminders-for-your-organization">
+            Managing scheduled reminders for your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-the-default-branch-name-for-repositories-in-your-organization">
+            Managing the default branch name for repositories in your organization
            </a>
           </li>
           <li class="sidebar-article">
@@ -1402,7 +1359,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/migrating-to-improved-organization-permissions">
           Migrating to improved organization permissions
          </a>
@@ -1424,7 +1381,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/restricting-access-to-your-organizations-data">
           Restricting access to your organization's data
          </a>
@@ -1456,7 +1413,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/keeping-your-organization-secure">
           Keeping your organization secure
          </a>
@@ -1474,6 +1431,16 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/requiring-two-factor-authentication-in-your-organization">
             Requiring two-factor authentication in your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-security-and-analysis-settings-for-your-organization">
+            Managing security and analysis settings for your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-secret-scanning-for-your-organization">
+            Managing secret scanning for your organization
            </a>
           </li>
           <li class="sidebar-article">
@@ -1498,7 +1465,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-saml-single-sign-on-for-your-organization">
           Managing SAML single sign-on for your organization
          </a>
@@ -1516,6 +1483,11 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/connecting-your-identity-provider-to-your-organization">
             Connecting your identity provider to your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/configuring-saml-single-sign-on-and-scim-using-okta">
+            Configuring SAML single sign-on and SCIM using Okta
            </a>
           </li>
           <li class="sidebar-article">
@@ -1539,13 +1511,18 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-team-synchronization-for-your-organization">
+            Managing team synchronization for your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-organizations-and-teams/accessing-your-organization-if-your-identity-provider-is-unavailable">
             Accessing your organization if your identity provider is unavailable
            </a>
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/granting-access-to-your-organization-with-saml-single-sign-on">
           Granting access to your organization with SAML single sign-on
          </a>
@@ -1567,7 +1544,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-organizations-and-teams/managing-git-access-to-your-organizations-repositories">
           Managing Git access to your organization's repositories
          </a>
@@ -1585,15 +1562,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/setting-up-and-managing-your-enterprise-account">
-          Setting up and managing your enterprise account
+          Your enterprise account
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -1601,9 +1578,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-enterprise-account/managing-your-enterprise-account">
           Managing your enterprise account
          </a>
@@ -1620,7 +1597,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-enterprise-account/managing-users-in-your-enterprise-account">
           Managing users in your enterprise account
          </a>
@@ -1647,7 +1624,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-enterprise-account/managing-organizations-in-your-enterprise-account">
           Managing organizations in your enterprise account
          </a>
@@ -1655,6 +1632,11 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-enterprise-account/adding-organizations-to-your-enterprise-account">
             Adding organizations to your enterprise account
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-enterprise-account/managing-unowned-organizations-in-your-enterprise-account">
+            Managing unowned organizations in your enterprise account
            </a>
           </li>
           <li class="sidebar-article">
@@ -1669,7 +1651,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-your-enterprise-account/setting-policies-for-organizations-in-your-enterprise-account">
           Setting policies for organizations in your enterprise account
          </a>
@@ -1695,22 +1677,32 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-your-enterprise-account/enforcing-a-policy-on-dependency-insights-in-your-enterprise-account">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-enterprise-account/configuring-saml-single-sign-on-and-scim-for-your-enterprise-account-using-okta">
+            Configuring SAML single sign-on and SCIM for your enterprise account using Okta
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/setting-up-and-managing-your-enterprise-account/enforcing-a-policy-on-dependency-insights-in-your-enterprise-account">
             Enforcing a policy on dependency insights in your enterprise account
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/setting-up-and-managing-your-enterprise-account/enforcing-github-actions-policies-in-your-enterprise-account">
+            Enforcing GitHub Actions policies in your enterprise account
            </a>
           </li>
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/setting-up-and-managing-billing-and-payments-on-github">
-          Setting up and managing billing and payments on GitHub
+          Billing and payments
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -1718,9 +1710,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-your-github-billing-settings">
           Managing your GitHub billing settings
          </a>
@@ -1782,7 +1774,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-your-github-account">
           Managing billing for your GitHub account
          </a>
@@ -1824,7 +1816,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-marketplace-apps">
           Managing billing for GitHub Marketplace apps
          </a>
@@ -1851,7 +1843,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-actions">
           Managing billing for GitHub Actions
          </a>
@@ -1873,7 +1865,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-git-large-file-storage">
           Managing billing for Git Large File Storage
          </a>
@@ -1900,7 +1892,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-sponsors">
           Managing billing for GitHub Sponsors
          </a>
@@ -1922,7 +1914,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/managing-billing-for-github-packages">
           Managing billing for GitHub Packages
          </a>
@@ -1944,7 +1936,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/setting-up-and-managing-billing-and-payments-on-github/setting-up-paid-organizations-for-procurement-companies">
           Setting up paid organizations for procurement companies
          </a>
@@ -1972,11 +1964,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/writing-on-github">
@@ -1988,9 +1980,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github">
           Getting started with writing and formatting on GitHub
          </a>
@@ -2007,7 +1999,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/writing-on-github/working-with-advanced-formatting">
           Working with advanced formatting
          </a>
@@ -2029,7 +2021,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/writing-on-github/working-with-saved-replies">
           Working with saved replies
          </a>
@@ -2061,7 +2053,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/writing-on-github/editing-and-sharing-content-with-gists">
           Editing and sharing content with gists
          </a>
@@ -2079,11 +2071,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/creating-cloning-and-archiving-repositories">
@@ -2095,9 +2087,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github">
           Creating a repository on GitHub
          </a>
@@ -2164,7 +2156,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github">
           Cloning a repository from GitHub
          </a>
@@ -2191,7 +2183,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/creating-cloning-and-archiving-repositories/archiving-a-github-repository">
           Archiving a GitHub repository
          </a>
@@ -2224,11 +2216,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/using-git">
@@ -2240,9 +2232,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/using-git/getting-started-with-git-and-github">
           Getting started with Git and GitHub
          </a>
@@ -2253,8 +2245,8 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/using-git/caching-your-github-password-in-git">
-            Caching your GitHub password in Git
+           <a class="pl-6 pr-5 py-1" href="/en/github/using-git/caching-your-github-credentials-in-git">
+            Caching your GitHub credentials in Git
            </a>
           </li>
           <li class="sidebar-article">
@@ -2263,13 +2255,13 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/using-git/updating-credentials-from-the-osx-keychain">
-            Updating credentials from the OSX Keychain
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/using-git/updating-credentials-from-the-macos-keychain">
+            Updating credentials from the macOS Keychain
            </a>
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/using-git/learning-about-git">
           Learning about Git
          </a>
@@ -2296,7 +2288,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/using-git/using-common-git-commands">
           Using common Git commands
          </a>
@@ -2318,7 +2310,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/using-git/managing-remote-repositories">
           Managing remote repositories
          </a>
@@ -2355,16 +2347,11 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/using-git/using-advanced-git-commands">
           Using advanced Git commands
          </a>
          <ul class="sidebar-articles my-2">
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/using-git/changing-author-info">
-            Changing author info
-           </a>
-          </li>
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/using-git/about-git-rebase">
             About Git rebase
@@ -2393,11 +2380,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/committing-changes-to-your-project">
@@ -2409,13 +2396,18 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/committing-changes-to-your-project/creating-and-editing-commits">
           Creating and editing commits
          </a>
          <ul class="sidebar-articles my-2">
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/committing-changes-to-your-project/about-commits">
+            About commits
+           </a>
+          </li>
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors">
             Creating a commit with multiple authors
@@ -2433,7 +2425,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/committing-changes-to-your-project/viewing-and-comparing-commits">
           Viewing and comparing commits
          </a>
@@ -2455,7 +2447,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/committing-changes-to-your-project/troubleshooting-commits">
           Troubleshooting commits
          </a>
@@ -2466,23 +2458,18 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/committing-changes-to-your-project/why-are-my-commits-linked-to-the-wrong-user">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/committing-changes-to-your-project/why-are-my-commits-linked-to-the-wrong-user">
             Why are my commits linked to the wrong user?
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/committing-changes-to-your-project/why-are-my-commits-in-the-wrong-order">
-            Why are my commits in the wrong order?
            </a>
           </li>
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/collaborating-with-issues-and-pull-requests">
@@ -2494,9 +2481,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/overview">
           Overview
          </a>
@@ -2518,7 +2505,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/working-with-forks">
           Working with forks
          </a>
@@ -2555,7 +2542,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/collaborating-on-repositories-with-code-quality-features">
           Collaborating on repositories with code quality features
          </a>
@@ -2567,7 +2554,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests">
           Proposing changes to your work with pull requests
          </a>
@@ -2624,7 +2611,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts">
           Addressing merge conflicts
          </a>
@@ -2646,7 +2633,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests">
           Reviewing changes in pull requests
          </a>
@@ -2703,7 +2690,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/collaborating-with-issues-and-pull-requests/incorporating-changes-from-a-pull-request">
           Incorporating changes from a pull request
          </a>
@@ -2731,11 +2718,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/managing-your-work-on-github">
@@ -2747,9 +2734,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-your-work-on-github/managing-your-work-with-issues">
           Managing your work with issues
          </a>
@@ -2767,6 +2754,11 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/managing-your-work-on-github/deleting-an-issue">
             Deleting an issue
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/managing-your-work-on-github/opening-an-issue-from-a-comment">
+            Opening an issue from a comment
            </a>
           </li>
           <li class="sidebar-article">
@@ -2831,7 +2823,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-your-work-on-github/labeling-issues-and-pull-requests">
           Labeling issues and pull requests
          </a>
@@ -2863,7 +2855,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-your-work-on-github/managing-project-boards">
           Managing project boards
          </a>
@@ -2935,7 +2927,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-project-boards">
           Tracking the progress of your work with project boards
          </a>
@@ -2967,7 +2959,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones">
           Tracking the progress of your work with milestones
          </a>
@@ -2999,7 +2991,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-your-work-on-github/finding-information-in-a-repository">
           Finding information in a repository
          </a>
@@ -3042,11 +3034,69 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
+       <summary>
+        <div class="d-flex flex-justify-between">
+         <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/developing-online-with-codespaces">
+          Codespaces
+         </a>
+         <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
+          </path>
+         </svg>
+        </div>
+       </summary>
+       <!-- some categories have maptopics with child articles -->
+       <ul class="sidebar-articles list-style-none">
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/about-codespaces">
+          About Codespaces
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/configuring-codespaces-for-your-project">
+          Configuring Codespaces for your project
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/creating-a-codespace">
+          Creating a codespace
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/developing-in-a-codespace">
+          Developing in a codespace
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account">
+          Personalizing Codespaces for your account
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/deleting-a-codespace">
+          Deleting a codespace
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/developing-online-with-codespaces/troubleshooting-your-codespace">
+          Troubleshooting your codespace
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1 pb-2" href="/en/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code">
+          Connecting to your codespace from Visual Studio Code
+         </a>
+        </li>
+       </ul>
+      </details>
+     </li>
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/building-a-strong-community">
@@ -3058,9 +3108,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/building-a-strong-community/setting-up-your-project-for-healthy-contributions">
           Setting up your project for healthy contributions
          </a>
@@ -3112,7 +3162,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/building-a-strong-community/using-templates-to-encourage-useful-issues-and-pull-requests">
           Using templates to encourage useful issues and pull requests
          </a>
@@ -3139,7 +3189,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/building-a-strong-community/moderating-comments-and-conversations">
           Moderating comments and conversations
          </a>
@@ -3181,7 +3231,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/building-a-strong-community/maintaining-your-safety-on-github">
           Maintaining your safety on GitHub
          </a>
@@ -3223,7 +3273,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/building-a-strong-community/documenting-your-project-with-wikis">
           Documenting your project with wikis
          </a>
@@ -3265,7 +3315,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/building-a-strong-community/collaborating-with-your-team">
           Collaborating with your team
          </a>
@@ -3293,11 +3343,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/searching-for-information-on-github">
@@ -3309,9 +3359,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/searching-for-information-on-github/getting-started-with-searching-on-github">
           Getting started with searching on GitHub
          </a>
@@ -3343,7 +3393,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/searching-for-information-on-github/searching-on-github">
           Searching on GitHub
          </a>
@@ -3366,11 +3416,6 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/searching-for-information-on-github/searching-code">
             Searching code
-           </a>
-          </li>
-          <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/searching-for-information-on-github/searching-code-for-exact-matches">
-            Searching code for exact matches
            </a>
           </li>
           <li class="sidebar-article">
@@ -3411,15 +3456,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/importing-your-projects-to-github">
-          Importing your projects to GitHub
+          Importing your projects
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -3427,9 +3472,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/importing-your-projects-to-github/importing-source-code-to-github">
           Importing source code to GitHub
          </a>
@@ -3466,7 +3511,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/importing-your-projects-to-github/working-with-subversion-on-github">
           Working with Subversion on GitHub
          </a>
@@ -3489,11 +3534,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/administering-a-repository">
@@ -3505,9 +3550,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/managing-repository-settings">
           Managing repository settings
          </a>
@@ -3533,6 +3578,11 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/about-email-notifications-for-pushes-to-your-repository">
+            About email notifications for pushes to your repository
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository">
             Displaying a sponsor button in your repository
            </a>
@@ -3550,6 +3600,16 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/managing-the-forking-policy-for-your-repository">
             Managing the forking policy for your repository
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository">
+            Disabling or limiting GitHub Actions for a repository
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/managing-git-lfs-objects-in-archives-of-your-repository">
+            Managing Git LFS objects in archives
            </a>
           </li>
           <li class="sidebar-article">
@@ -3579,7 +3639,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/managing-branches-in-your-repository">
           Managing branches in your repository
          </a>
@@ -3601,7 +3661,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/configuring-pull-request-merges">
           Configuring pull request merges
          </a>
@@ -3628,7 +3688,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests">
           Defining the mergeability of pull requests
          </a>
@@ -3705,9 +3765,9 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/releasing-projects-on-github">
-          Releasing projects on Github
+          Releasing projects on GitHub
          </a>
          <ul class="sidebar-articles my-2">
           <li class="sidebar-article">
@@ -3742,24 +3802,86 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/securing-your-repository">
           Securing your repository
          </a>
          <ul class="sidebar-articles my-2">
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/administering-a-repository/about-token-scanning">
-            About token scanning
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/about-securing-your-repository">
+            About securing your repository
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/about-secret-scanning">
+            About secret scanning
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/configuring-secret-scanning-for-private-repositories">
+            Configuring secret scanning for private repositories
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/managing-alerts-from-secret-scanning">
+            Managing alerts from secret scanning
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/administering-a-repository/managing-security-and-analysis-settings-for-your-repository">
+            Managing security and analysis settings for your repository
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="sidebar-maptopic">
+         <a class="pl-4 pr-5 py-2" href="/en/github/administering-a-repository/keeping-your-dependencies-updated-automatically">
+          Keeping your dependencies updated automatically
+         </a>
+         <ul class="sidebar-articles my-2">
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/about-github-dependabot-version-updates">
+            About GitHub Dependabot version updates
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/enabling-and-disabling-version-updates">
+            Enabling and disabling version updates
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/listing-dependencies-configured-for-version-updates">
+            Listing dependencies configured for version updates
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/managing-pull-requests-for-dependency-updates">
+            Managing pull requests for dependency updates
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/customizing-dependency-updates">
+            Customizing dependency updates
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/administering-a-repository/configuration-options-for-dependency-updates">
+            Configuration options for dependency updates
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/administering-a-repository/keeping-your-actions-up-to-date-with-github-dependabot">
+            Keeping your actions up to date with GitHub Dependabot
            </a>
           </li>
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/visualizing-repository-data-with-graphs">
@@ -3771,9 +3893,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/visualizing-repository-data-with-graphs/accessing-basic-repository-data">
           Accessing basic repository data
          </a>
@@ -3800,7 +3922,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/visualizing-repository-data-with-graphs/analyzing-changes-to-a-repositorys-content">
           Analyzing changes to a repository's content
          </a>
@@ -3817,7 +3939,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/visualizing-repository-data-with-graphs/understanding-connections-between-repositories">
           Understanding connections between repositories
          </a>
@@ -3833,23 +3955,23 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/visualizing-repository-data-with-graphs/listing-the-projects-that-depend-on-a-repository">
-            Listing the projects that depend on a repository
+           <a class="pl-6 pr-5 py-1" href="/en/github/visualizing-repository-data-with-graphs/about-the-dependency-graph">
+            About the dependency graph
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on">
-            Listing the packages that a repository depends on
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/visualizing-repository-data-with-graphs/exploring-the-dependencies-of-a-repository">
+            Exploring the dependencies of a repository
            </a>
           </li>
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/managing-security-vulnerabilities">
@@ -3861,9 +3983,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-security-vulnerabilities/managing-security-vulnerabilities-in-your-project">
           Managing security vulnerabilities in your project
          </a>
@@ -3909,13 +4031,18 @@
            </a>
           </li>
           <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/managing-security-vulnerabilities/editing-a-security-advisory">
+            Editing a security advisory
+           </a>
+          </li>
+          <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/managing-security-vulnerabilities/withdrawing-a-security-advisory">
             Withdrawing a security advisory
            </a>
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-security-vulnerabilities/managing-vulnerabilities-in-your-projects-dependencies">
           Managing vulnerabilities in your project's dependencies
          </a>
@@ -3926,13 +4053,13 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/managing-security-vulnerabilities/about-security-alerts-for-vulnerable-dependencies">
-            About security alerts for vulnerable dependencies
+           <a class="pl-6 pr-5 py-1" href="/en/github/managing-security-vulnerabilities/about-alerts-for-vulnerable-dependencies">
+            About alerts for vulnerable dependencies
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1" href="/en/github/managing-security-vulnerabilities/configuring-automated-security-updates">
-            Configuring automated security updates
+           <a class="pl-6 pr-5 py-1" href="/en/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates">
+            Configuring GitHub Dependabot security updates
            </a>
           </li>
           <li class="sidebar-article">
@@ -3941,18 +4068,111 @@
            </a>
           </li>
           <li class="sidebar-article">
-           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/managing-security-vulnerabilities/managing-alerts-for-vulnerable-dependencies-in-your-organization">
+           <a class="pl-6 pr-5 py-1" href="/en/github/managing-security-vulnerabilities/managing-alerts-for-vulnerable-dependencies-in-your-organization">
             Managing alerts for vulnerable dependencies in your organization
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/managing-security-vulnerabilities/troubleshooting-the-detection-of-vulnerable-dependencies">
+            Troubleshooting the detection of vulnerable dependencies
            </a>
           </li>
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
+       <summary>
+        <div class="d-flex flex-justify-between">
+         <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code">
+          Finding security vulnerabilities and errors in your code
+         </a>
+         <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
+          </path>
+         </svg>
+        </div>
+       </summary>
+       <!-- some categories have maptopics with child articles -->
+       <ul class="sidebar-topics list-style-none position-relative">
+        <li class="sidebar-maptopic">
+         <a class="pl-4 pr-5 py-2" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/automatically-scanning-your-code-for-vulnerabilities-and-errors">
+          Automatically scanning your code for vulnerabilities and errors
+         </a>
+         <ul class="sidebar-articles my-2">
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning">
+            About code scanning
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/enabling-code-scanning-for-a-repository">
+            Enabling code scanning
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/managing-alerts-from-code-scanning">
+            Managing alerts
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning">
+            Configuring code scanning
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning-for-compiled-languages">
+            Configuring for compiled languages
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/troubleshooting-code-scanning">
+            Troubleshooting
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="sidebar-maptopic">
+         <a class="pl-4 pr-5 py-2" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/integrating-with-code-scanning">
+          Integrating with code scanning
+         </a>
+         <ul class="sidebar-articles my-2">
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/about-integration-with-code-scanning">
+            About integration
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/running-code-scanning-in-your-ci-system">
+            Running in your CI
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning-in-your-ci-system">
+            Configuring in your CI
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/uploading-a-sarif-file-to-github">
+            Uploading a SARIF file
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1 pb-2" href="/en/github/finding-security-vulnerabilities-and-errors-in-your-code/sarif-support-for-code-scanning">
+            SARIF support
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+       <!-- some categories have no maptopics, only articles -->
+      </details>
+     </li>
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/managing-files-in-a-repository">
@@ -3964,9 +4184,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-files-in-a-repository/managing-files-on-github">
           Managing files on GitHub
          </a>
@@ -4023,7 +4243,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-files-in-a-repository/managing-files-using-the-command-line">
           Managing files using the command line
          </a>
@@ -4045,7 +4265,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-files-in-a-repository/working-with-non-code-files">
           Working with non-code files
          </a>
@@ -4088,11 +4308,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/managing-large-files">
@@ -4104,9 +4324,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-large-files/working-with-large-files">
           Working with large files
          </a>
@@ -4133,7 +4353,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/managing-large-files/versioning-large-files">
           Versioning large files
          </a>
@@ -4181,11 +4401,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/customizing-your-github-workflow">
@@ -4197,9 +4417,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/customizing-your-github-workflow/exploring-integrations">
           Exploring integrations
          </a>
@@ -4221,7 +4441,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/customizing-your-github-workflow/purchasing-and-installing-apps-in-github-marketplace">
           Purchasing and installing apps in GitHub Marketplace
          </a>
@@ -4239,11 +4459,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/extending-github">
@@ -4255,7 +4475,7 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-articles list-style-none">
         <li class="sidebar-article">
          <a class="pl-4 pr-5 py-1" href="/en/github/extending-github/getting-started-with-the-api">
@@ -4275,12 +4495,12 @@
        </ul>
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/working-with-github-pages">
-          Working with GitHub Pages
+          GitHub Pages
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -4288,9 +4508,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/working-with-github-pages/getting-started-with-github-pages">
           Getting started with GitHub Pages
          </a>
@@ -4337,7 +4557,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll">
           Setting up a GitHub Pages site with Jekyll
          </a>
@@ -4384,7 +4604,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">
           Configuring a custom domain for your GitHub Pages site
          </a>
@@ -4407,15 +4627,15 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/supporting-the-open-source-community-with-github-sponsors">
-          Supporting the open source community with GitHub Sponsors
+          GitHub Sponsors
          </a>
          <svg class="octicon flex-shrink-0 arrow mr-3" height="16" style="margin-top:7px" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd" d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z" fill-rule="evenodd">
@@ -4423,9 +4643,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/supporting-the-open-source-community-with-github-sponsors/overview">
           Overview
          </a>
@@ -4437,7 +4657,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/supporting-the-open-source-community-with-github-sponsors/sponsoring-open-source-contributors">
           Sponsoring open source contributors
          </a>
@@ -4454,7 +4674,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/supporting-the-open-source-community-with-github-sponsors/receiving-sponsorships-through-github-sponsors">
           Receiving sponsorships through GitHub Sponsors
          </a>
@@ -4477,6 +4697,11 @@
           <li class="sidebar-article">
            <a class="pl-6 pr-5 py-1" href="/en/github/supporting-the-open-source-community-with-github-sponsors/editing-your-profile-details-for-github-sponsors">
             Editing your profile details for GitHub Sponsors
+           </a>
+          </li>
+          <li class="sidebar-article">
+           <a class="pl-6 pr-5 py-1" href="/en/github/supporting-the-open-source-community-with-github-sponsors/managing-your-sponsorship-goal">
+            Managing your sponsorship goal
            </a>
           </li>
           <li class="sidebar-article">
@@ -4512,11 +4737,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/teaching-and-learning-with-github-education">
@@ -4528,9 +4753,9 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-topics list-style-none position-relative">
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/teaching-and-learning-with-github-education/using-github-at-your-educational-institution">
           Using GitHub at your educational institution
          </a>
@@ -4552,7 +4777,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/teaching-and-learning-with-github-education/using-github-for-your-schoolwork">
           Using GitHub for your schoolwork
          </a>
@@ -4574,7 +4799,7 @@
           </li>
          </ul>
         </li>
-        <li class="sidebar-topic">
+        <li class="sidebar-maptopic">
          <a class="pl-4 pr-5 py-2" href="/en/github/teaching-and-learning-with-github-education/using-github-in-your-classroom-and-research">
           Using GitHub in your classroom and research
          </a>
@@ -4597,11 +4822,11 @@
          </ul>
         </li>
        </ul>
-       <!-- some guides have no topics, only articles -->
+       <!-- some categories have no maptopics, only articles -->
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/finding-talent-with-github-jobs">
@@ -4613,7 +4838,7 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-articles list-style-none">
         <li class="sidebar-article">
          <a class="pl-4 pr-5 py-1 pb-2" href="/en/github/finding-talent-with-github-jobs/about-github-jobs">
@@ -4623,8 +4848,8 @@
        </ul>
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/working-with-github-support">
@@ -4636,7 +4861,7 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-articles list-style-none">
         <li class="sidebar-article">
          <a class="pl-4 pr-5 py-1" href="/en/github/working-with-github-support/about-github-support">
@@ -4666,8 +4891,8 @@
        </ul>
       </details>
      </li>
-     <li class="sidebar-guide py-1">
-      <details class="dropdown-withArrow toc-dropdown details details-reset">
+     <li class="sidebar-category py-1">
+      <details class="dropdown-withArrow details details-reset">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/understanding-how-github-uses-and-protects-your-data">
@@ -4679,7 +4904,7 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-articles list-style-none">
         <li class="sidebar-article">
          <a class="pl-4 pr-5 py-1" href="/en/github/understanding-how-github-uses-and-protects-your-data/about-githubs-use-of-your-data">
@@ -4692,15 +4917,20 @@
          </a>
         </li>
         <li class="sidebar-article">
-         <a class="pl-4 pr-5 py-1 pb-2" href="/en/github/understanding-how-github-uses-and-protects-your-data/opting-into-or-out-of-data-use-for-your-private-repository">
-          Opting into or out of data use for your private repository
+         <a class="pl-4 pr-5 py-1" href="/en/github/understanding-how-github-uses-and-protects-your-data/managing-data-use-settings-for-your-private-repository">
+          Managing data use settings for your private repository
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1 pb-2" href="/en/github/understanding-how-github-uses-and-protects-your-data/opting-into-or-out-of-the-github-archive-program-for-your-public-repository">
+          Opting into or out of the GitHub Archive Program for your public repository
          </a>
         </li>
        </ul>
       </details>
      </li>
-     <li class="sidebar-guide py-1 active">
-      <details class="dropdown-withArrow toc-dropdown details details-reset" open="">
+     <li class="sidebar-category py-1 active">
+      <details class="dropdown-withArrow details details-reset" open="">
        <summary>
         <div class="d-flex flex-justify-between">
          <a class="pl-4 pr-2 py-2 f6 text-uppercase d-block flex-auto mr-3" href="/en/github/site-policy">
@@ -4712,7 +4942,7 @@
          </svg>
         </div>
        </summary>
-       <!-- some guides have topics with child articles -->
+       <!-- some categories have maptopics with child articles -->
        <ul class="sidebar-articles list-style-none">
         <li class="sidebar-article active is-current-page">
          <a class="pl-4 pr-5 py-1" href="/en/github/site-policy/github-terms-of-service">
@@ -4727,6 +4957,11 @@
         <li class="sidebar-article">
          <a class="pl-4 pr-5 py-1" href="/en/github/site-policy/github-privacy-statement">
           GitHub Privacy Statement
+         </a>
+        </li>
+        <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/site-policy/github-data-protection-addendum">
+          GitHub Data Protection Addendum
          </a>
         </li>
         <li class="sidebar-article">
@@ -4905,6 +5140,11 @@
          </a>
         </li>
         <li class="sidebar-article">
+         <a class="pl-4 pr-5 py-1" href="/en/github/site-policy/github-deceased-user-policy">
+          GitHub Deceased User Policy
+         </a>
+        </li>
+        <li class="sidebar-article">
          <a class="pl-4 pr-5 py-1" href="/en/github/site-policy/github-statement-against-modern-slavery-and-child-labor">
           GitHub Statement Against Modern Slavery and Child Labor
          </a>
@@ -4941,17 +5181,17 @@
    </ul>
   </div>
   <main class="width-full">
-   <div class="border-bottom border-gray-light">
+   <div class="border-bottom border-gray-light no-print">
     <header class="container-xl px-3 px-md-6 pt-3 pb-2 position-relative d-flex flex-justify-between width-full">
      <div class="d-flex flex-items-center d-md-none" id="github-logo-mobile" style="z-index: 3;">
-      <a href="/en">
-       <svg aria-hidden="true" class="octicon octicon-mark-github" fill="#000000" height="32" version="1.1" viewbox="0 0 16 16" width="32">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd">
+      <a aria-hidden="true" href="/en">
+       <svg aria-hidden="true" class="octicon octicon-mark-github text-black" height="32" version="1.1" viewbox="0 0 16 16" width="32">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd">
         </path>
        </svg>
       </a>
       <a class="h4-mktg text-gray-dark no-underline no-wrap pl-2" href="/en">
-       GitHub Help
+       GitHub Docs
       </a>
      </div>
      <div class="width-full">
@@ -4965,7 +5205,7 @@
           <h4 class="text-mono f5 text-normal text-gray d-md-none">
            Explore by product
           </h4>
-          <details class="dropdown-withArrow position-relative details details-reset d-md-none">
+          <details class="dropdown-withArrow position-relative details details-reset d-md-none close-when-clicked-outside">
            <summary aria-label="Toggle products list" class="nav-desktop-productDropdownButton text-blue-mktg py-2" role="button">
             <div class="d-flex flex-items-center flex-justify-between" id="current-product" style="padding-top: 2px;">
              <!-- Product switcher - GitHub.com, Enterprise Server, etc -->
@@ -4989,6 +5229,15 @@
             </a>
             <a class="d-block py-2 link-gray-dark no-underline" href="/en/packages">
              GitHub Packages
+            </a>
+            <a class="d-block py-2 link-gray-dark no-underline" href="/en/developers">
+             Developers
+            </a>
+            <a class="d-block py-2 link-gray-dark no-underline" href="/en/rest">
+             REST API
+            </a>
+            <a class="d-block py-2 link-gray-dark no-underline" href="/en/graphql">
+             GraphQL API
             </a>
             <a class="d-block py-2 link-gray-dark no-underline" href="/en/insights">
              GitHub Insights
@@ -5019,7 +5268,7 @@
          </div>
          <div class="d-md-inline-block">
           <div class="border-top border-md-top-0 py-2 py-md-0 d-md-inline-block">
-           <details class="dropdown-withArrow position-relative details details-reset mr-md-3">
+           <details class="dropdown-withArrow position-relative details details-reset mr-md-3 close-when-clicked-outside">
             <summary aria-label="Toggle languages list" class="py-2 text-gray-dark" role="button">
              <div class="d-flex flex-items-center flex-justify-between">
               <!-- Language switcher - 'English', 'Japanese', etc -->
@@ -5049,8 +5298,8 @@
             </div>
            </details>
           </div>
-          <!-- GitHub.com homepage has a stylized search; Enterprise homepages do not -->
-          <div class="pt-3 pt-md-0 d-md-inline-block ml-md-3 border-top border-md-top-0">
+          <!-- GitHub.com homepage and 404 page has a stylized search; Enterprise homepages do not -->
+          <div class="pt-3 pt-md-0 d-md-inline-block ml-md-3 bord'er-top border-md-top-0">
            <!--
   This form is used in two places:
 
@@ -5058,7 +5307,7 @@
   - On all other pages, in the header
  -->
            <form class="mb-0">
-            <div id="search-input-container">
+            <div aria-hidden="true" id="search-input-container">
              <!-- Aloglia instantsearch.js will add a search input here -->
             </div>
            </form>
@@ -5084,7 +5333,7 @@
         <a class="d-inline-block" href="/en/github" title="product: GitHub.com">
          GitHub.com
         </a>
-        <a class="d-inline-block" href="/en/github/site-policy" title="guide: Site policy">
+        <a class="d-inline-block" href="/en/github/site-policy" title="category: Site policy">
          Site policy
         </a>
         <a class="d-inline-block text-gray-light" href="/en/github/site-policy/github-terms-of-service" title="article: GitHub Terms of Service">
@@ -5095,9 +5344,20 @@
      </div>
      <div class="mt-2 article-grid-container">
       <div class="article-grid-head">
-       <h1 class="border-bottom-0 mt-3">
-        GitHub Terms of Service
-       </h1>
+       <div class="d-flex flex-items-baseline flex-justify-between mt-3">
+        <h1 class="border-bottom-0">
+         GitHub Terms of Service
+        </h1>
+        <div class="d-none d-lg-block ml-2">
+         <button aria-label="Print this article" class="btn-link link-gray js-print tooltipped tooltipped-n">
+          <!-- From https://heroicons.dev/ -->
+          <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+           <path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z">
+           </path>
+          </svg>
+         </button>
+        </div>
+       </div>
       </div>
       <div class="article-grid-toc border-bottom border-xl-0 pb-4 mb-5 pb-xl-0 mb-xl-0">
        <div class="article-grid-toc-content">
@@ -5107,110 +5367,193 @@
          </a>
         </h3>
         <ul class="list-style-none pl-0 f5 mb-0">
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#summary">
            Summary
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#the-github-terms-of-service">
            The GitHub Terms of Service
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#a-definitions">
            A. Definitions
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#b-account-terms">
            B. Account Terms
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#c-acceptable-use">
            C. Acceptable Use
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#d-user-generated-content">
            D. User-Generated Content
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#e-private-repositories">
            E. Private Repositories
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#f-copyright-infringement-and-dmca-policy">
            F. Copyright Infringement and DMCA Policy
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#g-intellectual-property-notice">
            G. Intellectual Property Notice
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#h-api-terms">
            H. API Terms
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#i-github-additional-product-terms">
            I. GitHub Additional Product Terms
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#j-beta-previews">
            J. Beta Previews
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#k-payment">
            K. Payment
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#l-cancellation-and-termination">
            L. Cancellation and Termination
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#m-communications-with-github">
            M. Communications with GitHub
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#n-disclaimer-of-warranties">
            N. Disclaimer of Warranties
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#o-limitation-of-liability">
            O. Limitation of Liability
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#p-release-and-indemnification">
            P. Release and Indemnification
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#q-changes-to-these-terms">
            Q. Changes to These Terms
           </a>
          </li>
-         <li class="topTocItem mb-2 lh-condensed">
+         <li class="ml-0 mb-2 lh-condensed">
           <a href="#r-miscellaneous">
            R. Miscellaneous
           </a>
          </li>
         </ul>
+        <div class="d-none d-xl-block border-top border-gray-light mt-4">
+         <form class="js-helpfulness mt-4 f5" id="helpfulness-xl">
+          <h4 data-help-no="" data-help-start="" data-help-yes="">
+           Did this doc help you?
+          </h4>
+          <p class="radio-group" data-help-no="" data-help-start="" data-help-yes="">
+           <input aria-label="Yes" hidden="" id="helpfulness-yes-xl" name="helpfulness-vote" type="radio" value="Yes"/>
+           <label class="btn x-radio-label" for="helpfulness-yes-xl">
+            <svg aria-hidden="true" class="octicon octicon-thumbsup" height="24" version="1.1" viewbox="0 0 24 24" width="24">
+             <path d="M12.596 2.043c-1.301-.092-2.303.986-2.303 2.206v1.053c0 2.666-1.813 3.785-2.774 4.2a1.866 1.866 0 01-.523.131A1.75 1.75 0 005.25 8h-1.5A1.75 1.75 0 002 9.75v10.5c0 .967.784 1.75 1.75 1.75h1.5a1.75 1.75 0 001.742-1.58c.838.06 1.667.296 2.69.586l.602.17c1.464.406 3.213.824 5.544.824 2.188 0 3.693-.204 4.583-1.372.422-.554.65-1.255.816-2.05.148-.708.262-1.57.396-2.58l.051-.39c.319-2.386.328-4.18-.223-5.394-.293-.644-.743-1.125-1.355-1.431-.59-.296-1.284-.404-2.036-.404h-2.05l.056-.429c.025-.18.05-.372.076-.572.06-.483.117-1.006.117-1.438 0-1.245-.222-2.253-.92-2.941-.684-.675-1.668-.88-2.743-.956zM7 18.918c1.059.064 2.079.355 3.118.652l.568.16c1.406.39 3.006.77 5.142.77 2.277 0 3.004-.274 3.39-.781.216-.283.388-.718.54-1.448.136-.65.242-1.45.379-2.477l.05-.384c.32-2.4.253-3.795-.102-4.575-.16-.352-.375-.568-.66-.711-.305-.153-.74-.245-1.365-.245h-2.37c-.681 0-1.293-.57-1.211-1.328.026-.243.065-.537.105-.834l.07-.527c.06-.482.105-.921.105-1.25 0-1.125-.213-1.617-.473-1.873-.275-.27-.774-.455-1.795-.528-.351-.024-.698.274-.698.71v1.053c0 3.55-2.488 5.063-3.68 5.577-.372.16-.754.232-1.113.26v7.78zM3.75 20.5a.25.25 0 01-.25-.25V9.75a.25.25 0 01.25-.25h1.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25h-1.5z" fill-rule="evenodd">
+             </path>
+            </svg>
+           </label>
+           <input aria-label="No" hidden="" id="helpfulness-no-xl" name="helpfulness-vote" type="radio" value="No"/>
+           <label class="btn x-radio-label" for="helpfulness-no-xl">
+            <svg aria-hidden="true" class="octicon octicon-thumbsdown" height="24" version="1.1" viewbox="0 0 24 24" width="24">
+             <path d="M12.596 21.957c-1.301.092-2.303-.986-2.303-2.206v-1.053c0-2.666-1.813-3.785-2.774-4.2a1.864 1.864 0 00-.523-.13A1.75 1.75 0 015.25 16h-1.5A1.75 1.75 0 012 14.25V3.75C2 2.784 2.784 2 3.75 2h1.5a1.75 1.75 0 011.742 1.58c.838-.06 1.667-.296 2.69-.586l.602-.17C11.748 2.419 13.497 2 15.828 2c2.188 0 3.693.204 4.583 1.372.422.554.65 1.255.816 2.05.148.708.262 1.57.396 2.58l.051.39c.319 2.386.328 4.18-.223 5.394-.293.644-.743 1.125-1.355 1.431-.59.296-1.284.404-2.036.404h-2.05l.056.429c.025.18.05.372.076.572.06.483.117 1.006.117 1.438 0 1.245-.222 2.253-.92 2.942-.684.674-1.668.879-2.743.955zM7 5.082c1.059-.064 2.079-.355 3.118-.651.188-.054.377-.108.568-.16 1.406-.392 3.006-.771 5.142-.771 2.277 0 3.004.274 3.39.781.216.283.388.718.54 1.448.136.65.242 1.45.379 2.477l.05.385c.32 2.398.253 3.794-.102 4.574-.16.352-.375.569-.66.711-.305.153-.74.245-1.365.245h-2.37c-.681 0-1.293.57-1.211 1.328.026.244.065.537.105.834l.07.527c.06.482.105.922.105 1.25 0 1.125-.213 1.617-.473 1.873-.275.27-.774.456-1.795.528-.351.024-.698-.274-.698-.71v-1.053c0-3.55-2.488-5.063-3.68-5.577A3.485 3.485 0 007 12.861V5.08zM3.75 3.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h1.5a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25h-1.5z" fill-rule="evenodd">
+             </path>
+            </svg>
+           </label>
+          </p>
+          <p class="text-gray f6" data-help-yes="" hidden="">
+           Want to learn about new docs features and updates? Sign up for updates!
+          </p>
+          <p class="text-gray f6" data-help-no="" hidden="">
+           We're continually improving our docs. We'd love to hear how we can do better.
+          </p>
+          <input aria-hidden="true" class="d-none" name="helpfulness-token" type="text"/>
+          <p data-help-no="" hidden="">
+           <label class="d-block mb-1 f6" for="helpfulness-category-xl">
+            What problem did you have?
+            <span class="text-normal text-gray-light float-right ml-1">
+             Required
+            </span>
+           </label>
+           <select class="form-control select-sm width-full" id="helpfulness-category-xl" name="helpfulness-category">
+            <option value="">
+             Choose an option
+            </option>
+            <option value="Unclear">
+             Information was unclear
+            </option>
+            <option value="Confusing">
+             The content was confusing
+            </option>
+            <option value="Unhelpful">
+             The article didn't answer my question
+            </option>
+            <option value="Other">
+             Other
+            </option>
+           </select>
+          </p>
+          <p data-help-no="" hidden="">
+           <label class="d-block mb-1 f6" for="helpfulness-comment-xl">
+            <span>
+             Let us know what we can do better
+            </span>
+            <span class="text-normal text-gray-light float-right ml-1">
+             Optional
+            </span>
+           </label>
+           <textarea class="form-control input-sm width-full" id="helpfulness-comment-xl" name="helpfulness-comment"></textarea>
+          </p>
+          <p>
+           <label class="d-block mb-1 f6" data-help-no="" for="helpfulness-email-xl" hidden="">
+            Can we contact you if we have more questions?
+            <span class="text-normal text-gray-light float-right ml-1">
+             Optional
+            </span>
+           </label>
+           <input class="form-control input-sm width-full" data-help-no="" data-help-yes="" hidden="" id="helpfulness-email-xl" name="helpfulness-email" placeholder="email@example.com" type="email"/>
+          </p>
+          <p class="text-right" data-help-no="" data-help-yes="" hidden="">
+           <button class="btn btn-blue btn-sm" type="submit">
+            Send
+           </button>
+          </p>
+          <p class="text-gray f6" data-help-end="" hidden="">
+           Thank you! Your feedback has been submitted.
+          </p>
+         </form>
+        </div>
        </div>
       </div>
-      <div class="article-grid-body">
+      <div class="article-grid-body" id="article-contents">
        <p>
         Thank you for using GitHub! We're happy you're here. Please read this Terms of Service agreement carefully before accessing or using GitHub. Because it is such an important contract between us and our users, we have tried to make it as clear as possible. For your convenience, we have presented these terms in a short non-binding summary followed by the full legal terms.
        </p>
@@ -5425,7 +5768,7 @@
         </a>
        </h3>
        <p>
-        Effective date: November 13, 2019
+        Effective date: April 2, 2020
        </p>
        <h3 id="a-definitions">
         <a href="#a-definitions">
@@ -5451,7 +5794,7 @@
          </a>
          ) and procedures that we may publish from time to time on the Website. Most of our site policies are available at
          <a href="/en/categories/site-policy">
-          help.github.com/categories/site-policy
+          docs.github.com/categories/site-policy
          </a>
          .
         </li>
@@ -5574,7 +5917,7 @@
           Specially Designated National (SDN)
          </a>
          or a person subject to similar blocking or denied party prohibitions administered by a U.S. government agency.  GitHub may allow persons in certain sanctioned countries or territories to access certain GitHub services pursuant to U.S. government authorizations.  For more information, please see our
-         <a href="https://help.github.com/en/articles/github-and-export-controls">
+         <a href="/en/articles/github-and-export-controls">
           Export Controls policy
          </a>
          .
@@ -5643,11 +5986,11 @@
        </p>
        <p>
         You agree that you will not under any circumstances violate our
-        <a href="https://help.github.com/articles/github-acceptable-use-policies">
+        <a href="/en/articles/github-acceptable-use-policies">
          Acceptable Use Policies
         </a>
         or
-        <a href="https://help.github.com/en/articles/github-community-guidelines">
+        <a href="/en/articles/github-community-guidelines">
          Community Guidelines
         </a>
         .
@@ -5679,7 +6022,11 @@
         </a>
        </h4>
        <p>
-        We do not pre-screen User-Generated Content, but we have the right (though not the obligation) to refuse or remove any User-Generated Content that, in our sole discretion, violates any GitHub terms or policies.
+        We do not pre-screen User-Generated Content, but we have the right (though not the obligation) to refuse or remove any User-Generated Content that, in our sole discretion, violates any
+        <a href="/en/github/site-policy">
+         GitHub terms or policies
+        </a>
+        .
        </p>
        <h4 id="3-ownership-of-content-right-to-post-and-license-grants">
         <a href="#3-ownership-of-content-right-to-post-and-license-grants">
@@ -5775,7 +6122,7 @@
         </a>
        </h4>
        <p>
-        GitHub employees may only access the content of your private repositories in the following situations:
+        GitHub personnel may only access the content of your private repositories in the following situations:
        </p>
        <ul>
         <li>
@@ -6358,9 +6705,92 @@
       </div>
      </div>
     </article>
+    <div class="d-block d-xl-none border-top border-gray-light mt-4 markdown-body">
+     <form class="js-helpfulness mt-4 f5" id="helpfulness-sm">
+      <h4 data-help-no="" data-help-start="" data-help-yes="">
+       Did this doc help you?
+      </h4>
+      <p class="radio-group" data-help-no="" data-help-start="" data-help-yes="">
+       <input aria-label="Yes" hidden="" id="helpfulness-yes-sm" name="helpfulness-vote" type="radio" value="Yes"/>
+       <label class="btn x-radio-label" for="helpfulness-yes-sm">
+        <svg aria-hidden="true" class="octicon octicon-thumbsup" height="24" version="1.1" viewbox="0 0 24 24" width="24">
+         <path d="M12.596 2.043c-1.301-.092-2.303.986-2.303 2.206v1.053c0 2.666-1.813 3.785-2.774 4.2a1.866 1.866 0 01-.523.131A1.75 1.75 0 005.25 8h-1.5A1.75 1.75 0 002 9.75v10.5c0 .967.784 1.75 1.75 1.75h1.5a1.75 1.75 0 001.742-1.58c.838.06 1.667.296 2.69.586l.602.17c1.464.406 3.213.824 5.544.824 2.188 0 3.693-.204 4.583-1.372.422-.554.65-1.255.816-2.05.148-.708.262-1.57.396-2.58l.051-.39c.319-2.386.328-4.18-.223-5.394-.293-.644-.743-1.125-1.355-1.431-.59-.296-1.284-.404-2.036-.404h-2.05l.056-.429c.025-.18.05-.372.076-.572.06-.483.117-1.006.117-1.438 0-1.245-.222-2.253-.92-2.941-.684-.675-1.668-.88-2.743-.956zM7 18.918c1.059.064 2.079.355 3.118.652l.568.16c1.406.39 3.006.77 5.142.77 2.277 0 3.004-.274 3.39-.781.216-.283.388-.718.54-1.448.136-.65.242-1.45.379-2.477l.05-.384c.32-2.4.253-3.795-.102-4.575-.16-.352-.375-.568-.66-.711-.305-.153-.74-.245-1.365-.245h-2.37c-.681 0-1.293-.57-1.211-1.328.026-.243.065-.537.105-.834l.07-.527c.06-.482.105-.921.105-1.25 0-1.125-.213-1.617-.473-1.873-.275-.27-.774-.455-1.795-.528-.351-.024-.698.274-.698.71v1.053c0 3.55-2.488 5.063-3.68 5.577-.372.16-.754.232-1.113.26v7.78zM3.75 20.5a.25.25 0 01-.25-.25V9.75a.25.25 0 01.25-.25h1.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25h-1.5z" fill-rule="evenodd">
+         </path>
+        </svg>
+       </label>
+       <input aria-label="No" hidden="" id="helpfulness-no-sm" name="helpfulness-vote" type="radio" value="No"/>
+       <label class="btn x-radio-label" for="helpfulness-no-sm">
+        <svg aria-hidden="true" class="octicon octicon-thumbsdown" height="24" version="1.1" viewbox="0 0 24 24" width="24">
+         <path d="M12.596 21.957c-1.301.092-2.303-.986-2.303-2.206v-1.053c0-2.666-1.813-3.785-2.774-4.2a1.864 1.864 0 00-.523-.13A1.75 1.75 0 015.25 16h-1.5A1.75 1.75 0 012 14.25V3.75C2 2.784 2.784 2 3.75 2h1.5a1.75 1.75 0 011.742 1.58c.838-.06 1.667-.296 2.69-.586l.602-.17C11.748 2.419 13.497 2 15.828 2c2.188 0 3.693.204 4.583 1.372.422.554.65 1.255.816 2.05.148.708.262 1.57.396 2.58l.051.39c.319 2.386.328 4.18-.223 5.394-.293.644-.743 1.125-1.355 1.431-.59.296-1.284.404-2.036.404h-2.05l.056.429c.025.18.05.372.076.572.06.483.117 1.006.117 1.438 0 1.245-.222 2.253-.92 2.942-.684.674-1.668.879-2.743.955zM7 5.082c1.059-.064 2.079-.355 3.118-.651.188-.054.377-.108.568-.16 1.406-.392 3.006-.771 5.142-.771 2.277 0 3.004.274 3.39.781.216.283.388.718.54 1.448.136.65.242 1.45.379 2.477l.05.385c.32 2.398.253 3.794-.102 4.574-.16.352-.375.569-.66.711-.305.153-.74.245-1.365.245h-2.37c-.681 0-1.293.57-1.211 1.328.026.244.065.537.105.834l.07.527c.06.482.105.922.105 1.25 0 1.125-.213 1.617-.473 1.873-.275.27-.774.456-1.795.528-.351.024-.698-.274-.698-.71v-1.053c0-3.55-2.488-5.063-3.68-5.577A3.485 3.485 0 007 12.861V5.08zM3.75 3.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h1.5a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25h-1.5z" fill-rule="evenodd">
+         </path>
+        </svg>
+       </label>
+      </p>
+      <p class="text-gray f6" data-help-yes="" hidden="">
+       Want to learn about new docs features and updates? Sign up for updates!
+      </p>
+      <p class="text-gray f6" data-help-no="" hidden="">
+       We're continually improving our docs. We'd love to hear how we can do better.
+      </p>
+      <input aria-hidden="true" class="d-none" name="helpfulness-token" type="text"/>
+      <p data-help-no="" hidden="">
+       <label class="d-block mb-1 f6" for="helpfulness-category-sm">
+        What problem did you have?
+        <span class="text-normal text-gray-light float-right ml-1">
+         Required
+        </span>
+       </label>
+       <select class="form-control select-sm width-full" id="helpfulness-category-sm" name="helpfulness-category">
+        <option value="">
+         Choose an option
+        </option>
+        <option value="Unclear">
+         Information was unclear
+        </option>
+        <option value="Confusing">
+         The content was confusing
+        </option>
+        <option value="Unhelpful">
+         The article didn't answer my question
+        </option>
+        <option value="Other">
+         Other
+        </option>
+       </select>
+      </p>
+      <p data-help-no="" hidden="">
+       <label class="d-block mb-1 f6" for="helpfulness-comment-sm">
+        <span>
+         Let us know what we can do better
+        </span>
+        <span class="text-normal text-gray-light float-right ml-1">
+         Optional
+        </span>
+       </label>
+       <textarea class="form-control input-sm width-full" id="helpfulness-comment-sm" name="helpfulness-comment"></textarea>
+      </p>
+      <p>
+       <label class="d-block mb-1 f6" data-help-no="" for="helpfulness-email-sm" hidden="">
+        Can we contact you if we have more questions?
+        <span class="text-normal text-gray-light float-right ml-1">
+         Optional
+        </span>
+       </label>
+       <input class="form-control input-sm width-full" data-help-no="" data-help-yes="" hidden="" id="helpfulness-email-sm" name="helpfulness-email" placeholder="email@example.com" type="email"/>
+      </p>
+      <p class="text-right" data-help-no="" data-help-yes="" hidden="">
+       <button class="btn btn-blue btn-sm" type="submit">
+        Send
+       </button>
+      </p>
+      <p class="text-gray f6" data-help-end="" hidden="">
+       Thank you! Your feedback has been submitted.
+      </p>
+     </form>
+    </div>
    </main>
    <!-- Contact support banner -->
-   <section class="mt-lg-9 py-7" style="background-color: #fafbfc;">
+   <section class="mt-lg-9 py-7 no-print" style="background-color: #fafbfc;">
     <div class="container-xl px-3 px-md-6">
      <div class="gutter gutter-xl-spacious d-md-flex">
       <div class="col-12 col-md-5">
@@ -6370,7 +6800,7 @@
        <h4 class="h2-mktg mb-3">
         Can't find what you're looking for?
        </h4>
-       <a class="btn-mktg" href="https://support.github.com/contact">
+       <a class="btn-mktg" href="https://support.github.com/contact" id="contact-us">
         Contact us
        </a>
       </div>
@@ -6501,13 +6931,13 @@
      </div>
     </div>
    </section>
-   <div class="footer mt-6">
+   <div class="footer mt-6 no-print">
     <div class="container-xl px-3 px-md-6">
      <div class="d-flex flex-wrap py-5 mb-5">
       <div class="col-12 col-lg-4 mb-5">
        <a aria-label="Go to GitHub homepage" class="text-gray-dark" data-ga-click="Footer, go to home, text:home" href="https://github.com/">
-        <svg aria-hidden="true" class="octicon octicon-logo-github" height="30" version="1.1" viewbox="0 0 45 16" width="84">
-         <path d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 0 0-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z" fill-rule="evenodd">
+        <svg aria-hidden="true" class="octicon octicon-logo-github" height="30" version="1.1" viewbox="0 0 45 16" width="84.375">
+         <path d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z" fill-rule="evenodd">
          </path>
         </svg>
        </a>
@@ -6684,8 +7114,8 @@
        </li>
        <li>
         <a href="https://github.com/github" style="color: #959da5;" title="GitHub's organization">
-         <svg alt="GitHub" aria-hidden="true" class="octicon octicon-mark-github d-block" fill="#959da5" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd">
+         <svg aria-hidden="true" class="octicon octicon-mark-github" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill-rule="evenodd">
           </path>
          </svg>
         </a>
@@ -6709,11 +7139,7 @@
      </div>
     </div>
    </div>
-   <script src="/node_modules/algoliasearch/dist/algoliasearch.min.js">
-   </script>
-   <script src="/node_modules/instantsearch.js/dist/instantsearch.production.min.js">
-   </script>
-   <script src="/javascripts/index.js">
+   <script src="/dist/index.js">
    </script>
   </main>
  </body>

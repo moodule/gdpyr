@@ -6,7 +6,7 @@
   <div aria-live="polite" class="u-visually-hidden" id="announce">
   </div>
   <header role="banner">
-   <nav aria-label="Primary Navigation" class="c-nav c-nav--primary c-nav--alternate is-mobile" role="navigation">
+   <nav aria-label="Primary Navigation" class="c-nav c-nav--primary c-nav--alternate" role="navigation">
     <div class="c-nav__row o-nav--primary o-content-container">
      <div class="c-slacklogo">
       <a aria-label="Slack" class="c-slacklogo--white" data-clog-click="" data-clog-ui-component="inc_header_nav_deux" data-clog-ui-element="link_home" data-qa="logo" href="https://slack.com/intl/en-fr/">
@@ -14,12 +14,12 @@
        <img alt="Slack" class="c-slacklogo--color" height="25" src="https://a.slack-edge.com/4a5c4/marketing/img/icons/icon_slack.svg" width="100"/>
       </a>
      </div>
-     <nav class="c-nav__list is-mobile">
+     <nav class="c-nav__list">
       <ul class="c-nav-level--1">
-       <li class="c-nav--primary__listitem has_secondary">
-        <button class="c-menu--button v--main" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_features_main">
+       <li class="c-nav--primary__listitem has_secondary" data-qa="nav_features_main" role="button" tabindex="0">
+        <span class="v--main">
          Why Slack?
-        </button>
+        </span>
         <ul class="c-nav-level--2">
          <li>
           <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_features" href="https://slack.com/intl/en-fr/features">
@@ -43,11 +43,21 @@
          </li>
         </ul>
        </li>
-       <li class="c-nav--primary__listitem has_secondary">
-        <button class="c-menu--button v--main" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_solutions_main">
+       <li class="c-nav--primary__listitem has_secondary" data-qa="nav_solutions_main" role="button" tabindex="0">
+        <span class="v--main">
          Solutions
-        </button>
+        </span>
         <ul class="c-nav-level--2">
+         <li>
+          <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_remote_work" href="https://slack.com/intl/en-fr/solutions/remote-work">
+           Remote Work
+          </a>
+         </li>
+         <li>
+          <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_digital_campus" href="https://slack.com/intl/en-fr/solutions/digital-campus">
+           Distance Learning
+          </a>
+         </li>
          <li>
           <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_solutions_engineering" href="https://slack.com/intl/en-fr/solutions/engineering">
            Engineering
@@ -95,10 +105,10 @@
          </li>
         </ul>
        </li>
-       <li class="c-nav--primary__listitem has_secondary">
-        <button class="c-menu--button v--main" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_resources_main">
+       <li class="c-nav--primary__listitem has_secondary" data-qa="nav_resources_main" role="button" tabindex="0">
+        <span class="v--main">
          Resources
-        </button>
+        </span>
         <ul class="c-nav-level--2">
          <li class="toggler">
           <button aria-haspopup="true" class="c-menu--button" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_resources_sub">
@@ -111,13 +121,13 @@
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_slack_101" href="https://slack.com/intl/en-fr/resources/slack-101">
-             Slack 101
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_why_slack" href="https://slack.com/intl/en-fr/resources/why-use-slack">
+             Why use Slack?
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_why_slack" href="https://slack.com/intl/en-fr/resources/why-use-slack">
-             Why use Slack?
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_slack_101" href="https://slack.com/intl/en-fr/resources/slack-101">
+             Slack 101
             </a>
            </li>
            <li>
@@ -180,28 +190,28 @@
           </button>
           <ul class="c-nav-level--3">
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog" href="https://slackhq.com">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_blog_sub" href="https://slack.com/intl/en-fr/blog">
              Blog Home
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_collaboration" href="https://slackhq.com/categories/collaboration">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_collaboration" href="https://slack.com/intl/en-fr/blog/collaboration">
              Collaboration
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_productivity" href="https://slackhq.com/categories/productivity">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_productivity" href="https://slack.com/intl/en-fr/blog/productivity">
              Productivity
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_transformation" href="https://slackhq.com/categories/transformation">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_transformation" href="https://slack.com/intl/en-fr/blog/transformation">
              Transformation
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_at-slack" href="https://slackhq.com/categories/at-slack">
-             @Slack
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_at-slack" href="https://slack.com/intl/en-fr/blog/news">
+             News
             </a>
            </li>
           </ul>
@@ -250,11 +260,14 @@
        </li>
       </ul>
       <div class="c-nav--signed-out">
-       <a data-clog-click="" data-clog-ui-component="inc_header_nav_deux" data-clog-ui-element="link_sign_in_nav" data-qa="link_sign_in_nav" href="https://slack.com/signin">
+       <a data-clog-click="" data-clog-ui-component="inc_header_nav_deux" data-clog-ui-element="link_contact_sales" data-qa="link_contact_sales" href="https://slack.com/intl/en-fr/contact-sales">
+        Contact sales
+       </a>
+       <a data-clog-click="" data-clog-ui-component="inc_header_nav_deux" data-clog-ui-element="link_sign_in_nav" data-qa="link_sign_in_nav" href="https://slack.com/get-started#/find">
         Sign in
        </a>
        <a class="c-button v--left v--primary" data-clog-click="" data-clog-ui-component="inc_header_nav_deux" data-clog-ui-element="link_get_started" data-gtm-click="SignUp" data-qa="cta_get_started" href="https://slack.com/get-started">
-        Get started
+        Try for free
        </a>
       </div>
      </nav>
@@ -273,12 +286,12 @@
      </button>
     </div>
     <div class="c-nav__scroller">
-     <nav class="c-nav__list is-mobile">
+     <nav class="c-nav__list">
       <ul class="c-nav-level--1">
-       <li class="c-nav--primary__listitem has_secondary">
-        <button class="c-menu--button v--main" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_features_main">
+       <li class="c-nav--primary__listitem has_secondary" data-qa="nav_features_main" role="button" tabindex="0">
+        <span class="v--main">
          Why Slack?
-        </button>
+        </span>
         <ul class="c-nav-level--2">
          <li>
           <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_features" href="https://slack.com/intl/en-fr/features">
@@ -302,11 +315,21 @@
          </li>
         </ul>
        </li>
-       <li class="c-nav--primary__listitem has_secondary">
-        <button class="c-menu--button v--main" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_solutions_main">
+       <li class="c-nav--primary__listitem has_secondary" data-qa="nav_solutions_main" role="button" tabindex="0">
+        <span class="v--main">
          Solutions
-        </button>
+        </span>
         <ul class="c-nav-level--2">
+         <li>
+          <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_remote_work" href="https://slack.com/intl/en-fr/solutions/remote-work">
+           Remote Work
+          </a>
+         </li>
+         <li>
+          <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_digital_campus" href="https://slack.com/intl/en-fr/solutions/digital-campus">
+           Distance Learning
+          </a>
+         </li>
          <li>
           <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_solutions_engineering" href="https://slack.com/intl/en-fr/solutions/engineering">
            Engineering
@@ -354,10 +377,10 @@
          </li>
         </ul>
        </li>
-       <li class="c-nav--primary__listitem has_secondary">
-        <button class="c-menu--button v--main" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_resources_main">
+       <li class="c-nav--primary__listitem has_secondary" data-qa="nav_resources_main" role="button" tabindex="0">
+        <span class="v--main">
          Resources
-        </button>
+        </span>
         <ul class="c-nav-level--2">
          <li class="toggler">
           <button aria-haspopup="true" class="c-menu--button" data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_resources_sub">
@@ -370,13 +393,13 @@
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_slack_101" href="https://slack.com/intl/en-fr/resources/slack-101">
-             Slack 101
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_why_slack" href="https://slack.com/intl/en-fr/resources/why-use-slack">
+             Why use Slack?
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_why_slack" href="https://slack.com/intl/en-fr/resources/why-use-slack">
-             Why use Slack?
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_resources_slack_101" href="https://slack.com/intl/en-fr/resources/slack-101">
+             Slack 101
             </a>
            </li>
            <li>
@@ -439,28 +462,28 @@
           </button>
           <ul class="c-nav-level--3">
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog" href="https://slackhq.com">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="btn_blog_sub" href="https://slack.com/intl/en-fr/blog">
              Blog Home
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_collaboration" href="https://slackhq.com/categories/collaboration">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_collaboration" href="https://slack.com/intl/en-fr/blog/collaboration">
              Collaboration
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_productivity" href="https://slackhq.com/categories/productivity">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_productivity" href="https://slack.com/intl/en-fr/blog/productivity">
              Productivity
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_transformation" href="https://slackhq.com/categories/transformation">
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_transformation" href="https://slack.com/intl/en-fr/blog/transformation">
              Transformation
             </a>
            </li>
            <li>
-            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_at-slack" href="https://slackhq.com/categories/at-slack">
-             @Slack
+            <a data-clog-click="" data-clog-ui-component="inc_header_nav" data-clog-ui-element="link_blog_at-slack" href="https://slack.com/intl/en-fr/blog/news">
+             News
             </a>
            </li>
           </ul>
@@ -512,7 +535,7 @@
     </div>
     <div class="c-nav__button-container">
      <div class="c-feature-grid v--two">
-      <a class="c-nav__cta--workspace c-button v--primary v--clear" data-clog-click="" data-clog-ui-component="inc_mobile_nav_deux" data-clog-ui-element="link_sign_in_nav" data-gtm-click="optout_signin" href="https://slack.com/signin">
+      <a class="c-button c-nav__cta--workspace v--clear" data-clog-click="" data-clog-ui-component="inc_mobile_nav_deux" data-clog-ui-element="link_sign_in_nav" data-gtm-click="optout_signin" href="https://slack.com/signin">
        Sign in
       </a>
       <a class="c-button v--primary" data-clog-click="" data-clog-ui-component="inc_mobile_nav_deux" data-clog-ui-element="link_get_app" href="https://slack.com/intl/en-fr/get">
@@ -621,11 +644,6 @@
          </button>
          <ul class="c-nav__list v--left">
           <li class="c-nav--sidebar__listitem">
-           <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_privacy" href="https://slack.com/intl/en-fr/privacy-policy">
-            Slack Privacy Policy
-           </a>
-          </li>
-          <li class="c-nav--sidebar__listitem">
            <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_privacy_shield" href="https://slack.com/intl/en-fr/privacy-shield-notice">
             Privacy Shield Notice
            </a>
@@ -633,11 +651,6 @@
           <li class="c-nav--sidebar__listitem">
            <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_acceptable_use" href="https://slack.com/intl/en-fr/acceptable-use-policy">
             Acceptable Use Policy
-           </a>
-          </li>
-          <li class="c-nav--sidebar__listitem">
-           <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_data_request" href="https://slack.com/intl/en-fr/user-data-request-policy">
-            Data Request Policy
            </a>
           </li>
           <li class="c-nav--sidebar__listitem">
@@ -651,23 +664,8 @@
            </a>
           </li>
           <li class="c-nav--sidebar__listitem">
-           <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_transparency_report" href="https://slack.com/intl/en-fr/transparency-report">
-            Transparency Report
-           </a>
-          </li>
-          <li class="c-nav--sidebar__listitem">
            <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_dmca" href="https://slack.com/intl/en-fr/dmca-policy">
             DMCA Policy
-           </a>
-          </li>
-          <li class="c-nav--sidebar__listitem">
-           <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_cookie" href="https://slack.com/intl/en-fr/cookie-policy?eu_nc=1">
-            Cookie Policy
-           </a>
-          </li>
-          <li class="c-nav--sidebar__listitem">
-           <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_gdpr" href="https://slack.com/intl/en-fr/gdpr">
-            Slack's GDPR Commitment
            </a>
           </li>
           <li class="c-nav--sidebar__listitem">
@@ -683,11 +681,6 @@
           Security
          </button>
          <ul class="c-nav__list v--left">
-          <li class="c-nav--sidebar__listitem">
-           <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_security" href="https://slack.com/intl/en-fr/security">
-            Overview
-           </a>
-          </li>
           <li class="c-nav--sidebar__listitem">
            <a aria-current="false" class="" data-clog-click="" data-clog-ui-element="link_legal_security" href="https://slack.com/intl/en-fr/security-practices">
             Security Practices
@@ -1167,7 +1160,7 @@
         Survival
        </h2>
        <p>
-        The sections titled “Feedback is Welcome,” “Non-Slack Products,” “Our Removal Rights,” “A Condition of Use,” “Payment Terms,” “Credits,” “The Slack Extended Family,” “What’s Yours is Yours…,” “And What’s Ours is Ours,” “Effect of Termination,” “Data Portability and Deletion,” “Representations; Disclaimer of Warranties,” “Limitation of Liability,” “Our Indemnification of Customer,” “Customer’s Indemnification of Us,” “Limitations on Indemnifications,” “Confidentiality” and “Survival,” as well as all of the provisions under the general heading “General Provisions,” will survive any termination or expiration of the Contract.
+        The sections titled “Feedback is Welcome,” “Non-Slack Products,” “Our Removal Rights,” “Use of the Services,” “Payment Terms,” “Credits,” “The Slack Extended Family,” “What’s Yours is Yours…,” “And What’s Ours is Ours,” “Effect of Termination,” “Data Portability and Deletion,” “Representations; Disclaimer of Warranties,” “Limitation of Liability,” “Our Indemnification of Customer,” “Customer’s Indemnification of Us,” “Limitations on Indemnifications,” “Confidentiality” and “Survival,” as well as all of the provisions under the general heading “General Provisions,” will survive any termination or expiration of the Contract.
        </p>
        <h2>
         General Provisions
@@ -1291,7 +1284,7 @@
          <tr>
           <td>
            <p>
-            Rest of World
+            Rest of World (Except Japan)
            </p>
           </td>
           <td>
@@ -1310,6 +1303,28 @@
            </p>
           </td>
          </tr>
+         <tr>
+          <td>
+           <p>
+            Japan
+           </p>
+          </td>
+          <td>
+           <p>
+            Slack Technologies Limited
+           </p>
+          </td>
+          <td>
+           <p>
+            Japan
+           </p>
+          </td>
+          <td>
+           <p>
+            Tokyo, Japan
+           </p>
+          </td>
+         </tr>
         </tbody>
        </table>
        <p>
@@ -1323,7 +1338,7 @@
         <a data-no-clog="1" href="https://slack.com/intl/en-fr/terms-of-service/supplement">
          Customer-Specific Supplement
         </a>
-        that apply to Customer (if any), (3) the Customer Terms and (4) finally any other documents or pages referenced in the Terms. Notwithstanding any language to the contrary therein, no terms or conditions stated in a Customer purchase order, vendor onboarding process or web portal, or any other Customer order documentation (excluding Order Forms) will be incorporated into or form any part of the Contract, and all such terms or conditions will be null and void.
+        that apply to Customer (if any), (3) the Customer Terms and (4) finally any other documents or pages referenced in the Customer Terms. Notwithstanding any language to the contrary therein, no terms or conditions stated in a Customer purchase order, vendor onboarding process or web portal, or any other Customer order documentation (excluding Order Forms) will be incorporated into or form any part of the Contract, and all such terms or conditions will be null and void.
        </p>
       </div>
      </div>
@@ -1335,8 +1350,8 @@
     <h3 class="c-cta--signup__headline u-text--center">
      Try Slack with your team for free
     </h3>
-    <a class="c-button v--secondary v--no-border" data-clog-click="" data-clog-ui-component="inc_cta_footer" data-clog-ui-element="link_get_app" data-gtm-click="mobile-cta-ios" data-qa="footer_mobile_get_app" href="https://slack.onelink.me/FQG3?af_sub1=%2Fintl%2Fen-fr%2Fterms-of-service&amp;af_slk_web_endpoint=%2Fintl%2Fen-fr%2Fterms-of-service&amp;af_slk_web_visitor_uid=5vj1043s0uzdj7pu5men3uej8&amp;pid=slack_web">
-     Get Slack for iOS
+    <a class="c-button v--secondary v--no-border" data-clog-click="" data-clog-ui-component="inc_cta_footer" data-clog-ui-element="link_get_started" data-gtm-click="SignUp" data-qa="footer_cta_get_started" href="https://slack.com/intl/en-fr/get-started">
+     Get started
     </a>
    </div>
   </section>
@@ -1379,6 +1394,11 @@
          </a>
         </li>
         <li class="c-nav--footer__listitem">
+         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_trust" data-qa="security" href="https://slack.com/intl/en-fr/trust">
+          Trust
+         </a>
+        </li>
+        <li class="c-nav--footer__listitem">
          <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_customers" data-qa="customer_stories" href="https://slack.com/intl/en-fr/customer-stories">
           Customer Stories
          </a>
@@ -1389,7 +1409,7 @@
          </a>
         </li>
         <li class="c-nav--footer__listitem">
-         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_slack_demo" data-qa="slack_demo" href="https://slackdemo.com/?vst=5vj1043s0uzdj7pu5men3uej8" rel="noopener" target="_blank">
+         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_slack_demo" data-qa="slack_demo" href="https://slackdemo.com/?vst=euqlsdjrf5tuis8lvp2n4102v" rel="noopener" target="_blank">
           Slack Demo
          </a>
         </li>
@@ -1453,6 +1473,11 @@
        </p>
        <ul class="c-nav--footer__list">
         <li class="c-nav--footer__listitem">
+         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_resources" data-qa="resources" href="https://slack.com/intl/en-fr/resources">
+          Resources Library
+         </a>
+        </li>
+        <li class="c-nav--footer__listitem">
          <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_slacktips_home" data-qa="slack_tips" href="https://slack.com/intl/en-fr/slack-tips">
           Slack Tips
          </a>
@@ -1460,6 +1485,11 @@
         <li class="c-nav--footer__listitem">
          <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_blog" data-qa="blog" href="https://slackhq.com/" rel="noopener">
           Blog
+         </a>
+        </li>
+        <li class="c-nav--footer__listitem">
+         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_events" data-qa="events" href="https://slack.com/intl/en-fr/events">
+          Events
          </a>
         </li>
         <li class="c-nav--footer__listitem">
@@ -1510,7 +1540,7 @@
          </a>
         </li>
         <li class="c-nav--footer__listitem">
-         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_press" data-qa="press" href="https://slack.com/intl/en-fr/newsroom">
+         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_press" data-qa="press" href="https://slack.com/intl/en-fr/blog/news">
           News
          </a>
         </li>
@@ -1522,6 +1552,11 @@
         <li class="c-nav--footer__listitem">
          <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_careers" data-qa="careers" href="https://slack.com/intl/en-fr/careers">
           Careers
+         </a>
+        </li>
+        <li class="c-nav--footer__listitem">
+         <a data-clog-click="" data-clog-ui-component="inc_footer_nav" data-clog-ui-element="link_slack_swag_store" data-qa="slack-swag-store" href="https://slack.shop" target="_blank">
+          Slack Swag Store
          </a>
         </li>
        </ul>
@@ -1568,13 +1603,13 @@
             <h4 class="c-locale-new-menu__continent">
              Americas
             </h4>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="es-la" data-locale="es-LA" href="https://slack.com/intl/es-la/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="es-la" data-locale="es-LA" href="https://slack.com/intl/es-la/terms-of-service?nojsmode=1">
              Latinoamérica (español)
             </a>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="pt-br" data-locale="pt-BR" href="https://slack.com/intl/pt-br/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="pt-br" data-locale="pt-BR" href="https://slack.com/intl/pt-br/terms-of-service?nojsmode=1">
              Brasil (português)
             </a>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="en-us" data-locale="en-US" href="https://slack.com/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="en-us" data-locale="en-US" href="https://slack.com/terms-of-service?nojsmode=1">
              United States (English)
             </a>
            </div>
@@ -1582,16 +1617,16 @@
             <h4 class="c-locale-new-menu__continent">
              Europe
             </h4>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="de-de" data-locale="de-DE" href="https://slack.com/intl/de-de/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="de-de" data-locale="de-DE" href="https://slack.com/intl/de-de/terms-of-service?nojsmode=1">
              Deutschland (Deutsch)
             </a>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="es-es" data-locale="es-ES" href="https://slack.com/intl/es-es/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="es-es" data-locale="es-ES" href="https://slack.com/intl/es-es/terms-of-service?nojsmode=1">
              España (español)
             </a>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="fr-fr" data-locale="fr-FR" href="https://slack.com/intl/fr-fr/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="fr-fr" data-locale="fr-FR" href="https://slack.com/intl/fr-fr/terms-of-service?nojsmode=1">
              France (français)
             </a>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="en-gb" data-locale="en-GB" href="https://slack.com/intl/en-gb/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="en-gb" data-locale="en-GB" href="https://slack.com/intl/en-gb/terms-of-service?nojsmode=1">
              United Kingdom (English)
             </a>
            </div>
@@ -1599,10 +1634,10 @@
             <h4 class="c-locale-new-menu__continent">
              Asia Pacific
             </h4>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="en-in" data-locale="en-GB" href="https://slack.com/intl/en-in/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="en-in" data-locale="en-GB" href="https://slack.com/intl/en-in/terms-of-service?nojsmode=1">
              India (English)
             </a>
-            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="ja-jp" data-locale="ja-JP" href="https://slack.com/intl/ja-jp/terms-of-service">
+            <a class="c-locale-new-menu__locale" data-clog-manual="" data-geocode="ja-jp" data-locale="ja-JP" href="https://slack.com/intl/ja-jp/terms-of-service?nojsmode=1">
              日本 (日本語)
             </a>
            </div>
@@ -1671,15 +1706,15 @@
     </div>
    </div>
   </footer>
-  <script crossorigin="anonymous" onerror="window._cdn ? _cdn.failed(this, arguments) : null" onload="window._cdn ? _cdn.ok(this, arguments) : null" src="https://a.slack-edge.com/bv1-8-8cacda2/rollup-marketing.383d5a0b746f3d474ceb.marketing.min.js" type="text/javascript">
+  <script crossorigin="anonymous" onerror="window._cdn ? _cdn.failed(this, arguments) : null" onload="window._cdn ? _cdn.ok(this, arguments) : null" src="https://a.slack-edge.com/bv1-8/rollup-marketing.ada4e8fb7c0ce3b68fe9.marketing.min.js" type="text/javascript">
   </script>
-  <script crossorigin="anonymous" onerror="window._cdn ? _cdn.failed(this, arguments) : null" onload="window._cdn ? _cdn.ok(this, arguments) : null" src="https://a.slack-edge.com/bv1-8-8cacda2/marketing-core.e2f24d2972d18944dd96.marketing.min.js" type="text/javascript">
+  <script crossorigin="anonymous" onerror="window._cdn ? _cdn.failed(this, arguments) : null" onload="window._cdn ? _cdn.ok(this, arguments) : null" src="https://a.slack-edge.com/bv1-8/marketing-core.d690efb3c9d9d19175ca.marketing.min.js" type="text/javascript">
   </script>
-  <script crossorigin="anonymous" onerror="window._cdn ? _cdn.failed(this, arguments) : null" onload="window._cdn ? _cdn.ok(this, arguments) : null" src="https://a.slack-edge.com/bv1-8-8cacda2/marketing-page-navigation.d4f7bb3371b4bed804a8.marketing.min.js" type="text/javascript">
+  <script crossorigin="anonymous" onerror="window._cdn ? _cdn.failed(this, arguments) : null" onload="window._cdn ? _cdn.ok(this, arguments) : null" src="https://a.slack-edge.com/bv1-8/marketing-page-navigation.105614c4680cb40ee8a9.marketing.min.js" type="text/javascript">
   </script>
   <script>
    TD.boot_data.xhp = true;
-TD.boot_data.version_uid = "9a2ad4ef45b8dd1117250450c3dbe4d607777a05";
+TD.boot_data.version_uid = "29b630126c8424748617d46bed2980efdbe2edf1";
 TD.boot_data.environment = "prod";
 TD.boot_data.abs_root_url = "https:\/\/slack.com\/";
 
@@ -1688,10 +1723,10 @@ TD.boot_data.beacon_timing_url = "https:\/\/slack.com\/beacon\/timing";
 TD.boot_data.referral_code = "";
 TD.boot_data.auth_cookie_domain = ".slack.com";
 
-TD.boot_data.geo = {"country":"FR","region":"A8","city":"Le Mesnil-amelot","zip":"77990","lat":803.9346,"lon":305.6796,"metro":null,"area":null,"isp":"Free SAS","org":null,"country_label":"France","region_label":"Ile-de-France","country3":"FRA","continent":"EU","ok":true};
+TD.boot_data.geo = {"country":"FR","region":"A8","city":"Paris","zip":"75014","lat":-179.1061,"lon":305.6787,"metro":null,"area":null,"isp":"Free SAS","org":null,"country_label":"France","region_label":"Ile-de-France","country3":"FRA","continent":"EU","ok":true};
 TD.boot_data.geocode = "en-fr";
 TD.boot_data.intl_prefix = "\/intl\/en-fr";
-TD.boot_data.request_uri = "\/intl\/en-fr\/terms-of-service";
+TD.boot_data.request_uri = "\/intl\/en-fr\/terms-of-service?nojsmode=1";
 TD.boot_data.canonical_web_url = "https:\/\/slack.com\/intl\/en-fr\/terms-of-service";
 TD.boot_data.i18n_locale = "en-US";
 TD.boot_data.geo_root_url = "https:\/\/slack.com\/intl\/en-fr\/";
@@ -1729,10 +1764,10 @@ TD.model.user_email = TD.boot_data.user_email;
 TD.model.team_id = TD.boot_data.team_id;
 TD.model.team_url = TD.boot_data.team_url;
 TD.model.team_domain = TD.boot_data.team_domain;
-TD.model.visitor_uid = "5vj1043s0uzdj7pu5men3uej8";
+TD.model.visitor_uid = "euqlsdjrf5tuis8lvp2n4102v";
 TD.model.enterprise_id = TD.boot_data.enterprise_id;
 
-TD.model.session_id = "5vj1043s0uzdj7pu5men3uej8.1582902058";
+TD.model.session_id = "euqlsdjrf5tuis8lvp2n4102v.1599859847";
 TD.model.session_is_fresh = true;
 
 TD.model.is_first_visit = true;
@@ -1742,11 +1777,18 @@ TD.model.is_signed_in = !!(TD.model.user_id);
 
 TD.model.num_signed_in_users = 0;
 TD.model.is_enterprise = !!(TD.boot_data.enterprise_id);
-TD.model.visitor_score = null;TD.model.curr_plan = '';
+TD.cms = {};
+TD.cms.is_cms = false;
+TD.cms.is_preview = false;
+TD.cms.is_unlocked = false;
+TD.model.curr_plan = '';
 TD.boot_data.clog_ui_step = "page_legal_subpage";
 if(TD.boot_data.team_id) TD.clog.setTeam(TD.boot_data.team_id);
 if(TD.boot_data.user_id) TD.clog.setUser(TD.boot_data.user_id);
-TD.boot_data.res_hub_i18n = true;
+TD.boot_data.feature_ce_eng_contact_purple_peruvian = false;
+TD.boot_data.feature_ce_eng_search_demo = false;
+TD.boot_data.is_ls_eligible = false;
+TD.boot_data.should_ls_load = false;
   </script>
   <script type="text/javascript">
    TD.clog.track("WEBSITE_IMPRESSION", {

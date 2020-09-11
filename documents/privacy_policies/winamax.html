@@ -94,46 +94,33 @@
          S'inscrire
         </a>
         <div id="login-popup">
-         <form action="/a-propos_conditions-generales-d-utilisation_politique-de-confidentialite" autocomplete="off" id="login-form" method="post">
-          <p class="field">
-           <label>
-            Adresse email
-           </label>
-           <input autocomplete="off" id="loginbox_email" name="email" placeholder="vous@exemple.com" tabindex="1" type="email" value=""/>
-          </p>
-          <p class="field">
-           <label>
-            Mot de passe
-           </label>
-           <input autocomplete="off" id="loginbox_password" name="password" placeholder="" tabindex="2" type="password"/>
-           <a class="forgot-password" href="/account/lost_password.php">
-            Mot de passe oublié ?
-           </a>
-          </p>
-          <p class="field birthdate">
-           <label for="day-input">
-            Date de naissance
-           </label>
-           <input autocomplete="off" id="loginbox_birthday" maxlength="2" name="birth_day" pattern="[0-9]*" placeholder="JJ" size="2" tabindex="3" type="text" value=""/>
-           <input autocomplete="off" id="loginbox_birthmonth" maxlength="2" name="birth_month" pattern="[0-9]*" placeholder="MM" size="2" tabindex="4" type="text" value=""/>
-           <input autocomplete="off" id="loginbox_birthyear" maxlength="4" name="birth_year" pattern="[0-9]*" placeholder="AAAA" size="4" tabindex="5" type="text" value=""/>
-          </p>
-          <button class="secondary-button" id="login-button" name="submitlogin" tabindex="6" type="submit">
-           <i class="icon-lock">
-           </i>
-           Connexion
-          </button>
+         <form data-node="login-loader-form" id="login-loader-form" method="POST" style="display:none" target="login">
+          <input name="trust_level" type="hidden" value="3"/>
+          <input name="opid" type="hidden" value="wam"/>
+          <input name="application" type="hidden" value="winamax"/>
+          <input id="input-login-hash" name="challenge_hash" type="hidden" value=""/>
+          <input name="lang" type="hidden" value="fr_FR"/>
+          <input name="oid" type="hidden" value="medrqd7udooid7iei6npepsv7t"/>
          </form>
-         <div id="no-account">
-          <a href="/account/create.php">
-           <span>
-            Pas encore de compte ?
-           </span>
-           Inscrivez-vous gratuitement
-          </a>
+         <div class="spinner" id="spinner-login">
+          <div class="rect1">
+          </div>
+          <div class="rect2">
+          </div>
+          <div class="rect3">
+          </div>
+          <div class="rect4">
+          </div>
+          <div class="rect5">
+          </div>
+          <br/>
+          Chargement en cours
          </div>
-        </div>
-        <div id="pin-popup">
+         <iframe data-node="iframe" frameborder="1" id="iframe-login" name="login" scrolling="auto" style="min-height: 360px; width: 100%; display:none;">
+         </iframe>
+         <script>
+          var loginPopupHeight = 360;
+         </script>
         </div>
        </div>
        <div class="expandable" id="search" style="height:28px">
@@ -243,16 +230,6 @@
          <li>
           <a href="/solary">
            ESPORT
-          </a>
-         </li>
-         <li>
-          <a href="/winamax-campus-league">
-           Campus League
-          </a>
-         </li>
-         <li>
-          <a href="/king5">
-           King5
           </a>
          </li>
         </ul>
@@ -453,10 +430,10 @@
            Spécificités légales
           </h2>
           <p>
-           Conformément aux dispositions de l'article 2 du décret 2010-518 du 19 mai 2010, vous êtes informé que la création d'un compte emporte renonciation à votre droit d'opposition au traitement de vos données personnelles. En vous inscrivant sur le Site, vous acceptez que vos données personnelles soient transmises à l'Autorité de Régulation des Jeux En Ligne (ARJEL). Il est rappelé aux joueurs que conformément à la loi n°2010-476 du 12 mai 2010, tout opérateur doit conserver dans un coffre-fort électronique l'ensemble des données collectées, dont notamment les événements de jeu. Ce coffre-fort électronique est accessible à tout moment par l'ARJEL, l'opérateur ne pouvant pas modifier les données contenues dans ce coffre-fort.
+           Conformément aux dispositions de l'article 2 du décret 2010-518 du 19 mai 2010, vous êtes informé que la création d'un compte emporte renonciation à votre droit d'opposition au traitement de vos données personnelles. En vous inscrivant sur le Site, vous acceptez que vos données personnelles soient transmises à l'Autorité Nationale des Jeux (ANJ). Il est rappelé aux joueurs que conformément à la loi n°2010-476 du 12 mai 2010, tout opérateur doit conserver dans un coffre-fort électronique l'ensemble des données collectées, dont notamment les événements de jeu. Ce coffre-fort électronique est accessible à tout moment par l'ANJ, l'opérateur ne pouvant pas modifier les données contenues dans ce coffre-fort.
            <br/>
            <br/>
-           L'ARJEL est susceptible de traiter les données personnelles des utilisateurs pour exercer les missions définies par la loi n° 2010-476 du 12 mai 2010 relative à l'ouverture à la concurrence et à la régulation du secteur des jeux d'argent et de hasard en ligne, notamment en matière de lutte contre le jeu excessif, décrits
+           L'ANJ est susceptible de traiter les données personnelles des utilisateurs pour exercer les missions définies par la loi n° 2010-476 du 12 mai 2010 relative à l'ouverture à la concurrence et à la régulation du secteur des jeux d'argent et de hasard en ligne, notamment en matière de lutte contre le jeu excessif, décrits
            <a href="http://www.arjel.fr/-Donnees-personnelles-.html">
             ici
            </a>
@@ -501,13 +478,13 @@
             </a>
            </li>
            <li>
-            <a href="/cgu-paris-sportifs">
-             Règlement des paris sportifs
+            <a href="/cgu-poker">
+             Règlement poker
             </a>
            </li>
            <li>
-            <a href="/cgu-poker">
-             Règlement poker
+            <a href="/cgu-paris-sportifs">
+             Règlement des paris sportifs
             </a>
            </li>
            <li>
@@ -534,7 +511,7 @@
           N°1 du Poker en ligne - Les meilleures cotes sur les paris sportifs *
          </p>
          <p>
-          Winamax est agréé par l'autorité de régulation des jeux en ligne
+          Winamax est agréé par l'Autorité Nationale des Jeux
          </p>
         </div>
        </div>
@@ -735,18 +712,8 @@
            </a>
           </li>
           <li>
-           <a href="/ogc-nice">
-            OGC Nice
-           </a>
-          </li>
-          <li>
            <a href="/losc">
             LOSC
-           </a>
-          </li>
-          <li>
-           <a href="/amienssc">
-            Amiens SC
            </a>
           </li>
           <li>
@@ -809,7 +776,7 @@
        <div id="legal-notices">
         <div id="legal-icons">
          <div class="legal-item">
-          <a href="http://www.arjel.fr" target="_blank">
+          <a href="http://www.anj.fr" target="_blank">
            <div class="sprite arjel">
            </div>
           </a>
@@ -860,29 +827,29 @@
     </footer>
    </div>
   </div>
-  <script src="https://operator-front-static-cdn.winamax.fr/script/v2/config.js?v=20200226-1" type="text/javascript">
+  <script src="https://operator-front-static-cdn.winamax.fr/script/v2/config.js?v=20200909-1" type="text/javascript">
   </script>
   <script type="text/javascript">
    require.baseUrl = "https://operator-front-static-cdn.winamax.fr/";
-    require.urlArgs = "v=20200226-1";
+    require.urlArgs = "v=20200909-1";
   </script>
-  <script src="https://operator-front-static-cdn.winamax.fr/script/v2/lib/require-2.1.6.min.js?v=20200226-1" type="text/javascript">
+  <script src="https://operator-front-static-cdn.winamax.fr/script/v2/lib/require-2.1.6.min.js?v=20200909-1" type="text/javascript">
   </script>
   <script>
    // Load library dependencies
 require(['jquery', 'swipe', 'touch', 'magnific', 'fancybox'], function() {
     // Always load scripts common to all pages
-    require(['script/v2/common', 'script/v2/mobile','jquery','swipe','touch','magnific','fancybox','script/v2/gallery','script/v2/doubleslider'], function() {
+    require(['script/v2/common', 'script/v2/mobile','jquery','swipe','touch','magnific','fancybox','script/v2/gallery','script/v2/doubleslider','script/v2/lib/crypto-js'], function() {
         // When the document is ready, load page-specific scripts if any
         $(document).ready(function() {
             require(['https://operator-front-static-cdn.winamax.fr/script/v2/idletime.js']);
 dataLayer = [{ 
-'type': 'CONTENT','category': 'a-propos','sub_category': 'conditions-generales-d-utilisation','page': 'politique-de-confidentialite','step': '','landing': '0','visit_affiliate': '','visit_info1': '','visit_info2': '','visit_info3': '','visit_info4': '','visit_info5': '','creation_affiliate': '','creation_info1': '','creation_info2': '','creation_info3': '','creation_info4': '','creation_info5': '','deposit_affiliate': '','deposit_info1': '','deposit_info2': '','deposit_info3': '','deposit_info4': '','deposit_info5': '','custom1': 'A','custom2': 'Y','custom3': '','custom4': '','custom5': '','uu': '','at': '','fd': 'N','is_xp': '0','cookie_tier': '0','cookie_analytics': '1','license': 'FR'}]; 
+'type': 'CONTENT','category': 'a-propos','sub_category': 'conditions-generales-d-utilisation','page': 'politique-de-confidentialite','step': '','landing': '0','visit_affiliate': '','visit_info1': '','visit_info2': '','visit_info3': '','visit_info4': '','visit_info5': '','creation_affiliate': '','creation_info1': '','creation_info2': '','creation_info3': '','creation_info4': '','creation_info5': '','deposit_affiliate': '','deposit_info1': '','deposit_info2': '','deposit_info3': '','deposit_info4': '','deposit_info5': '','custom1': '','custom2': 'Y','custom3': '','custom4': '','custom5': '','uu': '','at': '','fd': 'N','is_xp': '0','cookie_tier': '0','cookie_analytics': '1','license': 'FR'}]; 
 				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-				})(window,document,'script','dataLayer','GTM-TX897J');	        });
+				})(window,document,'script','dataLayer','GTM-TX897J');        });
     });
 });
   </script>

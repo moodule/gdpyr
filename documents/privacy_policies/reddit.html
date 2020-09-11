@@ -798,8 +798,6 @@
          </a>
          Reddit Ireland Limited
          <br/>
-         c/o Matheson
-         <br/>
          Attn: Reddit EU Data Inquiries
          <br/>
          70 Sir John Rogerson's Quay
@@ -972,10 +970,12 @@
   </script>
   <script defer="" src="https://www.redditinc.com/assets/js/ads.js?rel=1534185970845">
   </script>
-  <script defer="" src="https://www.redditinc.com/assets/js/main.js?rel=1572894179700">
+  <script defer="" src="https://www.redditinc.com/assets/js/main.js?rel=1595956570906">
   </script>
   <script>
    initRecaptcha = function() {
+                if ($('form .require-recaptcha').length < 1) return;
+                
                 grecaptcha.render('recaptcha', {
                     'sitekey' : '6LfV4JYUAAAAAEhc2CrEBZBUPG8POUC-OhvKE0nL',
                     'callback' : function(response) {

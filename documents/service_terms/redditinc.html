@@ -731,7 +731,7 @@
         </p>
         <p>
          If you use the self-service platform for advertising, you must also agree to our
-         <a href="https://www.reddithelp.com/en/categories/advertising/policy-and-guidelines/advertising-terms-ads-platform" rel="noreferrer noopener" target="_blank">
+         <a href="https://advertising.reddithelp.com/en/categories/policy-guidelines/advertising-terms-ads-platform" rel="noreferrer noopener" target="_blank">
           Terms for Self-Service Advertising
          </a>
          .
@@ -797,16 +797,16 @@
          United States
         </p>
         <p>
-         Authorized to receive service on behalf of Reddit, Inc. for administrative and judicial proceedings within the meaning of Section 5(1) of the Network Enforcement Act:
+         Authorized to receive service in Germany on behalf of Reddit, Inc. for administrative and judicial proceedings within the meaning of Section 5(1) of the Network Enforcement Act:
         </p>
         <p>
-         Fieldfisher (Germany) LLP
+         Taylor Wessing PartG mbB
          <br/>
-         Am Sandtorkai 68
+         - NetzDG-Zustellungen -
+         <br/>
+         Am Sandtorkai 41
          <br/>
          20457 Hamburg
-         <br/>
-         Germany
          <br/>
         </p>
        </div>
@@ -969,10 +969,12 @@
   </script>
   <script defer="" src="https://www.redditinc.com/assets/js/ads.js?rel=1534185970845">
   </script>
-  <script defer="" src="https://www.redditinc.com/assets/js/main.js?rel=1572894179700">
+  <script defer="" src="https://www.redditinc.com/assets/js/main.js?rel=1595956570906">
   </script>
   <script>
    initRecaptcha = function() {
+                if ($('form .require-recaptcha').length < 1) return;
+                
                 grecaptcha.render('recaptcha', {
                     'sitekey' : '6LfV4JYUAAAAAEhc2CrEBZBUPG8POUC-OhvKE0nL',
                     'callback' : function(response) {
