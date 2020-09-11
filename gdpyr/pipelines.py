@@ -131,7 +131,6 @@ class BasePipeline(object):
             parent_path=os.path.join(
                 os.path.realpath(
                     crawler.settings.get('EXPORT_FOLDER_PATH')),
-                __project_name,
                 __query_name.replace('_', '-')),
             file_name=__spider_name)
 

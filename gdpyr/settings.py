@@ -80,7 +80,7 @@ DEPTH_PRIORITY = 1
 #}
 
 # Parent location of all the exports
-EXPORT_FOLDER_PATH = os.path.realpath('./data/')
+EXPORT_FOLDER_PATH = os.path.realpath('./documents/')
 MONGO_URI = 'mongodb://localhost:27017/'
 MONGO_DATABASE = 'gdpyr'
 
