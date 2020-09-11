@@ -14,7 +14,7 @@ cookies.
 
 from __future__ import division, print_function, absolute_import
 
-from homespace.spiders._legaldocuments import LegalDocumentsSpider
+from gdpyr.spiders._legaldocuments import LegalDocumentsSpider
 
 #####################################################################
 # SPIDER

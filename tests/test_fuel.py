@@ -7,7 +7,7 @@ from __future__ import absolute_import, division, print_function
 
 from numpy import isclose
 
-from homespace.references import vehicules
+from gdpyr.references import vehicules
 
 def test_conversions_mpg_to_lpkm():
     assert vehicules.us_mpg_to_lpkm(0.0) == 0.0

@@ -15,7 +15,7 @@ import io
 from scrapy.exporters import BaseItemExporter, JsonItemExporter
 from scrapy.utils.python import to_bytes, to_unicode
 
-from homespace._wrangling import serialize_html_tag
+from gdpyr._wrangling import serialize_html_tag
 
 #####################################################################
 # HTML

@@ -1,4 +1,4 @@
-* Homespace Moodule version:
+* GDPyR Moodule version:
 * Python version:
 * Operating System:
 

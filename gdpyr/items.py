@@ -14,7 +14,7 @@ from itemloaders.processors import Identity, Join, MapCompose, TakeFirst
 from scrapy import Field, Item
 from scrapy.loader import ItemLoader
 
-from homespace._wrangling import prettify_html
+from gdpyr._wrangling import prettify_html
 
 #####################################################################
 # GENERIC AD

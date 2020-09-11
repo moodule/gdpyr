@@ -20,8 +20,8 @@ from pymongo import MongoClient
 from scrapy.exporters import CsvItemExporter
 from scrapy.loader import ItemLoader
 
-from homespace.exporters import GeoJsonItemExporter, HtmlItemExporter
-from homespace.items._secondhandad import SecondHandAd, SecondHandAdLoader
+from gdpyr.exporters import GeoJsonItemExporter, HtmlItemExporter
+from gdpyr.items._secondhandad import SecondHandAd, SecondHandAdLoader
 
 #####################################################################
 # ENABLE / DISABLE PIPELINES
@@ -106,14 +106,14 @@ class BasePipeline(object):
             crawler):
         """
         """
-        __project_name = 'homespace'
+        __project_name = 'gdpyr'
         __spider_name = 'default'
         __query_name = 'default'
         if crawler.spider:
             __project_name = getattr(
                 crawler.spider,
                 'project',
-                'homespace')
+                'gdpyr')
             __spider_name = getattr(
                 crawler.spider,
                 'name',
@@ -362,7 +362,7 @@ class MongoDbPipeline(object):
         """
         return cls(
             mongo_uri=crawler.settings.get('MONGO_URI', 'mongodb://localhost:27017/'),
-            mongo_db=crawler.settings.get('MONGO_DATABASE', 'homespace')
+            mongo_db=crawler.settings.get('MONGO_DATABASE', 'gdpyr')
         )
 
     @redirects

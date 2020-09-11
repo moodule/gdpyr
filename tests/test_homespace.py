@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `homespace` package."""
+"""Tests for `gdpyr` package."""
 
-from homespace import _wrangling
+from gdpyr import _wrangling

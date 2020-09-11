@@ -15,7 +15,7 @@ from __future__ import division, print_function, absolute_import
 
 import scrapy
 
-from homespace.items import LegalDocument, LegalDocumentLoader
+from gdpyr.items import LegalDocument, LegalDocumentLoader
 
 #####################################################################
 # SPIDER

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for homespace project
+# Scrapy settings for gdpyr project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -12,10 +12,10 @@
 import os
 import random
 
-BOT_NAME = 'homespace'
+BOT_NAME = 'gdpyr'
 
-SPIDER_MODULES = ['homespace.spiders']
-NEWSPIDER_MODULE = 'homespace.spiders'
+SPIDER_MODULES = ['gdpyr.spiders']
+NEWSPIDER_MODULE = 'gdpyr.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -55,8 +55,8 @@ COOKIES_ENABLED = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-   'homespace.middlewares.RandomUserAgentMiddleware': 100,
-   'homespace.middlewares.HomespaceSpiderMiddleware': 543,
+   'gdpyr.middlewares.RandomUserAgentMiddleware': 100,
+   'gdpyr.middlewares.GDPyRSpiderMiddleware': 543,
 }
 
 # The maximum depth that will be allowed to crawl for any site.
@@ -70,7 +70,7 @@ DEPTH_PRIORITY = 1
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'homespace.middlewares.HomespaceDownloaderMiddleware': 543,
+#    'gdpyr.middlewares.GDPyRDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -82,16 +82,16 @@ DEPTH_PRIORITY = 1
 # Parent location of all the exports
 EXPORT_FOLDER_PATH = os.path.realpath('./data/')
 MONGO_URI = 'mongodb://localhost:27017/'
-MONGO_DATABASE = 'homespace'
+MONGO_DATABASE = 'gdpyr'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'homespace.pipelines.CsvPipeline': 300,
-   'homespace.pipelines.HtmlTablePipeline': 301,
-   'homespace.pipelines.JsonPipeline': 302,
-   'homespace.pipelines.MongoDbPipeline': 303,
-   'homespace.pipelines.RawPipeline': 304,
+   'gdpyr.pipelines.CsvPipeline': 300,
+   'gdpyr.pipelines.HtmlTablePipeline': 301,
+   'gdpyr.pipelines.JsonPipeline': 302,
+   'gdpyr.pipelines.MongoDbPipeline': 303,
+   'gdpyr.pipelines.RawPipeline': 304,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
