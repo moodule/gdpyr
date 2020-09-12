@@ -10,43 +10,6 @@
   </script>
   <div id="doc">
    <div id="inner-wrap">
-    <script>
-     var arjelBannerImgPath = Math.random() > 0.5 ? "https://static.winamax.fr/img/style/v2/common/avertissement.png?v=2" : "https://static.winamax.fr/img/style/v2/common/avertissement-alt.png";
-          function setupArjelBanner() {
-            var ref = document.getElementById("inner-wrap");
-            if (ref) {
-              var banner = document.createElement("div");
-              banner.style.cursor = "pointer";
-              banner.style.background = "url('" + arjelBannerImgPath + "') no-repeat center center #000";
-              banner.style.height = "60px";
-              banner.style.zIndex = Math.floor(50 + Math.random() * 100);
-
-              function goArjelInfos() {
-                window.open("https://www.winamax.fr/CLIC/PREVENTION/JIS_HOME/www.joueurs-info-service.fr");
-              }
-
-              function WidthChange(mq) {
-                if (mq.matches) {
-                  var arjelBannerImgPath = Math.random() > 0.5 ? "https://static.winamax.fr/img/style/v2/common/avertissement-mobile.png?v=2" : "https://static.winamax.fr/img/style/v2/common/avertissement-alt-mobile.png";
-                  banner.style.background = "url('" + arjelBannerImgPath + "') no-repeat center center #000";
-                  banner.style.backgroundSize = "100% auto";
-                } else {
-                  banner.style.display = "block";
-                }
-              }
-
-              banner.addEventListener("click", goArjelInfos, false);
-              ref.insertBefore(banner, ref.firstChild);
-
-              if (matchMedia) {
-                var mq = window.matchMedia("(max-width: 480px)");
-                mq.addListener(WidthChange);
-                WidthChange(mq);
-              }
-            }
-          }
-          setupArjelBanner();
-    </script>
     <div class="top-notif-wrapper">
      <div class="notification top-notif medium cookie-consent">
       <i class="icon-warning-sign">
@@ -100,7 +63,7 @@
           <input name="application" type="hidden" value="winamax"/>
           <input id="input-login-hash" name="challenge_hash" type="hidden" value=""/>
           <input name="lang" type="hidden" value="fr_FR"/>
-          <input name="oid" type="hidden" value="medrqd7udooid7iei6npepsv7t"/>
+          <input name="oid" type="hidden" value="2glorl0i155o71g6rmjjtg545f"/>
          </form>
          <div class="spinner" id="spinner-login">
           <div class="rect1">
@@ -824,6 +787,45 @@
        </div>
       </section>
      </div>
+     <div id="footer-inner-wrap">
+     </div>
+     <script>
+      var arjelBannerImgPath = Math.random() > 0.5 ? "https://static.winamax.fr/img/style/v2/common/avertissement.png?v=2" : "https://static.winamax.fr/img/style/v2/common/avertissement-alt.png";
+          function setupArjelBanner() {
+            var ref = document.getElementById("footer-inner-wrap");
+            if (ref) {
+              var banner = document.createElement("div");
+              banner.style.cursor = "pointer";
+              banner.style.background = "url('" + arjelBannerImgPath + "') no-repeat center center #000";
+              banner.style.height = "60px";
+              banner.style.zIndex = Math.floor(50 + Math.random() * 100);
+
+              function goArjelInfos() {
+                window.open("https://www.winamax.fr/CLIC/PREVENTION/JIS_HOME/www.joueurs-info-service.fr");
+              }
+
+              function WidthChange(mq) {
+                if (mq.matches) {
+                  var arjelBannerImgPath = Math.random() > 0.5 ? "https://static.winamax.fr/img/style/v2/common/avertissement-mobile.png?v=2" : "https://static.winamax.fr/img/style/v2/common/avertissement-alt-mobile.png";
+                  banner.style.background = "url('" + arjelBannerImgPath + "') no-repeat center center #000";
+                  banner.style.backgroundSize = "100% auto";
+                } else {
+                  banner.style.display = "block";
+                }
+              }
+
+              banner.addEventListener("click", goArjelInfos, false);
+              ref.insertBefore(banner, ref.firstChild);
+
+              if (matchMedia) {
+                var mq = window.matchMedia("(max-width: 480px)");
+                mq.addListener(WidthChange);
+                WidthChange(mq);
+              }
+            }
+          }
+          setupArjelBanner();
+     </script>
     </footer>
    </div>
   </div>
