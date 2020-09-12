@@ -29,10 +29,21 @@ class PrivacyPoliciesSpider(LegalDocumentsSpider):
 
     def __init__(
             self,
-            *args,
-            **kwargs):
+            *args: str,
+            **kwargs: str) -> None:
         """
-        Initiate the scraping env.
+        List the privacy policy's urls.
+
+        Parameters
+        ----------
+        args: str.
+            Command line arguments, passed by the scrapy shell.
+        kwargs: str.
+            Command line arguments, passed by the scrapy shell.
+
+        Returns
+        -------
+        out: None.
         """
         super(PrivacyPoliciesSpider, self).__init__(*args, **kwargs)
 

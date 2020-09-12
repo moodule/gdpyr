@@ -25,7 +25,7 @@ OUTDOOR_AREA_REGEX = '(?:terrain|jardin|parc)\s*(?:de)?\s*' + ANY_AREA_REGEX
 PRICE_REGEX = '([-+]?[0-9]*\.?[0-9]+)'
 
 #####################################################################
-# ENCODING & FORMAT
+# ENCODING & SERIALIZATION
 #####################################################################
 
 def format_datetime(
