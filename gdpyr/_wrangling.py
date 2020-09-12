@@ -201,6 +201,37 @@ def remove_special_characters(
         '',
         text)
 
+def filter_lines_by_length(
+        text: str,
+        lower: int,
+        upper: int) -> str:
+    """
+    Remove all the lines longer than a given limit.
+    The line-break is supposed to be '\n'.
+
+    Each space is counted as a character.
+    A tabulation accounts for a single character.
+
+    Parameters
+    ----------
+    text: str.
+        A single string with multiple lines of text.
+    lower: int.
+        Lines (stictly) shorter than this bound are removed.
+    upper: int.
+        Lines (stictly) longer than this bound are removed.
+    
+    Returns
+    -------
+    out: str.
+        A single string, with each line length between <lower>
+        and <upper> bounds.
+    """
+    return '\n'.join(
+        filter(
+            lambda x: (len(x) >= lower) and (len(x) <= upper),
+            text.split('\n')))
+
 #####################################################################
 # HTML
 #####################################################################
